@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="GSHAutoErrorCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载失败..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmz-h6-DxN">
+                        <rect key="frame" x="157.5" y="68" width="60" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.23529411764705882" green="0.2627450980392157" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auto_error_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Xkl-dS-Ncx">
+                        <rect key="frame" x="143.5" y="69" width="12" height="12"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drf-Ux-j3q">
+                        <rect key="frame" x="219.5" y="63" width="50" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Vhr-dA-23W"/>
+                            <constraint firstAttribute="width" constant="50" id="vEz-UU-U9q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="刷新">
+                            <color key="titleColor" red="0.18039215689999999" green="0.69019607839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.18039215689999999" green="0.69019607839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="refreshButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Fx3-1C-38j"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wmz-h6-DxN" firstAttribute="leading" secondItem="Xkl-dS-Ncx" secondAttribute="trailing" constant="2" id="AAe-tt-5hX"/>
+                    <constraint firstItem="Wmz-h6-DxN" firstAttribute="centerY" secondItem="Xkl-dS-Ncx" secondAttribute="centerY" id="Asp-NV-4h9"/>
+                    <constraint firstItem="Drf-Ux-j3q" firstAttribute="centerY" secondItem="Wmz-h6-DxN" secondAttribute="centerY" id="Sum-DW-rQ5"/>
+                    <constraint firstItem="Drf-Ux-j3q" firstAttribute="leading" secondItem="Wmz-h6-DxN" secondAttribute="trailing" constant="2" id="Uye-yE-bnj"/>
+                    <constraint firstItem="Xkl-dS-Ncx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Vou-qu-kga"/>
+                    <constraint firstItem="Wmz-h6-DxN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="csz-w3-bS9"/>
+                    <constraint firstItem="Wmz-h6-DxN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="fgA-AN-7rd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="138.40579710144928" y="152.67857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="auto_error_icon" width="12" height="12"/>
+    </resources>
+</document>

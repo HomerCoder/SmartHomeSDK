@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--安防告警授权-->
+        <scene sceneID="6Cq-Kw-3vE">
+            <objects>
+                <viewController storyboardIdentifier="GSHDefenceAlarmAuthVC" title="安防告警授权" id="dBK-sl-boW" customClass="GSHDefenceAlarmAuthVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F1B-4t-HiJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="l8J-uF-W9O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tVi-Q2-na2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定享家社区房屋后,支持设置安防告警推送至物业中心" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWb-Z1-nTz">
+                                <rect key="frame" x="10" y="88" width="365" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Krh-c3-N8h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.2627450980392157" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMU-YT-BzL">
+                                <rect key="frame" x="0.0" y="124" width="375" height="215"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-wZ-t3g">
+                                        <rect key="frame" x="37.666666666666657" y="32" width="300" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="52k-ZK-GfQ"/>
+                                            <constraint firstAttribute="height" constant="45" id="EsF-bg-kal"/>
+                                        </constraints>
+                                        <state key="normal" title="潘淳的家">
+                                            <color key="titleColor" red="0.0" green="0.69411764705882351" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.69411764705882351" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selectSmartHomeFamilyClick:" destination="dBK-sl-boW" eventType="touchUpInside" id="40I-Tm-VKP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2G-0A-hB5">
+                                        <rect key="frame" x="172.66666666666666" y="93" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="AwV-WH-DT3"/>
+                                            <constraint firstAttribute="width" constant="30" id="SUJ-Lm-RPd"/>
+                                        </constraints>
+                                        <state key="normal" image="defenceAuth_bind_normal"/>
+                                        <state key="selected" image="defenceAuth_bind_sel"/>
+                                        <state key="highlighted" image="defenceAuth_bind_normal"/>
+                                        <connections>
+                                            <action selector="bindButtonClick:" destination="dBK-sl-boW" eventType="touchUpInside" id="cgj-wd-svY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="955-UF-RR1">
+                                        <rect key="frame" x="37.666666666666657" y="139" width="300" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="gKQ-3S-0rg"/>
+                                            <constraint firstAttribute="height" constant="45" id="rLe-Nw-Zcz"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="绑定房屋" image="defenceAuth_add">
+                                            <color key="titleColor" red="0.23529411764705882" green="0.2627450980392157" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.23529411764705882" green="0.2627450980392157" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selectEnjoyHomeHouseClick:" destination="dBK-sl-boW" eventType="touchUpInside" id="Yvb-yp-Jjn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="b2G-0A-hB5" firstAttribute="top" secondItem="3dN-wZ-t3g" secondAttribute="bottom" constant="16" id="J5U-5p-1N0"/>
+                                    <constraint firstItem="3dN-wZ-t3g" firstAttribute="top" secondItem="hMU-YT-BzL" secondAttribute="top" constant="32" id="ROx-kN-VRT"/>
+                                    <constraint firstItem="b2G-0A-hB5" firstAttribute="centerX" secondItem="hMU-YT-BzL" secondAttribute="centerX" id="ZZh-Ox-r0q"/>
+                                    <constraint firstAttribute="height" constant="215" id="cbI-0J-NX7"/>
+                                    <constraint firstItem="955-UF-RR1" firstAttribute="top" secondItem="b2G-0A-hB5" secondAttribute="bottom" constant="16" id="fOx-yQ-N7c"/>
+                                    <constraint firstItem="955-UF-RR1" firstAttribute="centerX" secondItem="hMU-YT-BzL" secondAttribute="centerX" id="nAE-Ym-dw0"/>
+                                    <constraint firstItem="3dN-wZ-t3g" firstAttribute="centerX" secondItem="hMU-YT-BzL" secondAttribute="centerX" id="qNA-2c-GLq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUz-8O-tGl">
+                                <rect key="frame" x="0.0" y="351" width="375" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="告警授权开启" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nem-mb-grO">
+                                        <rect key="frame" x="16" y="18" width="98" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ONM-Uf-jBV">
+                                        <rect key="frame" x="310" y="12" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.0" green="0.69411764705882351" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="authSwitchClick:" destination="dBK-sl-boW" eventType="valueChanged" id="c9z-BP-sAd"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ONM-Uf-jBV" firstAttribute="centerY" secondItem="FUz-8O-tGl" secondAttribute="centerY" id="Erh-IZ-9SF"/>
+                                    <constraint firstItem="nem-mb-grO" firstAttribute="leading" secondItem="FUz-8O-tGl" secondAttribute="leading" constant="16" id="Frw-Nr-pNG"/>
+                                    <constraint firstItem="nem-mb-grO" firstAttribute="centerY" secondItem="FUz-8O-tGl" secondAttribute="centerY" id="IYB-2h-IpZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ONM-Uf-jBV" secondAttribute="trailing" constant="16" id="RYf-Ub-rFF"/>
+                                    <constraint firstAttribute="height" constant="55" id="Wzo-x6-JPW"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启后,物业中心将同步收到家庭安防告警" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dp0-xx-pA9">
+                                <rect key="frame" x="16" y="418" width="261.33333333333331" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NWb-Z1-nTz" secondAttribute="trailing" id="7Ms-79-y7H"/>
+                            <constraint firstItem="FUz-8O-tGl" firstAttribute="top" secondItem="hMU-YT-BzL" secondAttribute="bottom" constant="12" id="HUO-eH-hDn"/>
+                            <constraint firstItem="NWb-Z1-nTz" firstAttribute="leading" secondItem="tVi-Q2-na2" secondAttribute="leading" constant="10" id="JCC-08-M1s"/>
+                            <constraint firstItem="FUz-8O-tGl" firstAttribute="leading" secondItem="tVi-Q2-na2" secondAttribute="leading" id="KZ8-MM-GhV"/>
+                            <constraint firstItem="Dp0-xx-pA9" firstAttribute="top" secondItem="FUz-8O-tGl" secondAttribute="bottom" constant="12" id="Vhb-PR-fgo"/>
+                            <constraint firstItem="NWb-Z1-nTz" firstAttribute="top" secondItem="F1B-4t-HiJ" secondAttribute="bottom" id="YYo-NU-KpI"/>
+                            <constraint firstItem="Dp0-xx-pA9" firstAttribute="leading" secondItem="tVi-Q2-na2" secondAttribute="leading" constant="16" id="ltE-h7-bAw"/>
+                            <constraint firstAttribute="trailing" secondItem="hMU-YT-BzL" secondAttribute="trailing" id="qHy-M7-UrA"/>
+                            <constraint firstItem="hMU-YT-BzL" firstAttribute="leading" secondItem="tVi-Q2-na2" secondAttribute="leading" id="quY-z3-iOU"/>
+                            <constraint firstAttribute="trailing" secondItem="FUz-8O-tGl" secondAttribute="trailing" id="sR1-vk-U7J"/>
+                            <constraint firstItem="hMU-YT-BzL" firstAttribute="top" secondItem="NWb-Z1-nTz" secondAttribute="bottom" id="xVD-vy-7la"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="authSwitch" destination="ONM-Uf-jBV" id="XkA-2f-VpP"/>
+                        <outlet property="bindButton" destination="b2G-0A-hB5" id="iW6-rH-kuO"/>
+                        <outlet property="selectEnjoyHomeHouseButton" destination="955-UF-RR1" id="01b-oV-AOc"/>
+                        <outlet property="selectSmartHomeHouseButton" destination="3dN-wZ-t3g" id="j8d-Ac-4fe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NMz-tG-spA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-902" y="86"/>
+        </scene>
+        <!--绑定房屋-->
+        <scene sceneID="pYb-0m-qxA">
+            <objects>
+                <viewController storyboardIdentifier="GSHDefenceAlarmAuthBindHouseListVC" id="e2g-wI-F9b" customClass="GSHDefenceAlarmAuthBindHouseListVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zro-Ku-iHz"/>
+                        <viewControllerLayoutGuide type="bottom" id="EaL-nb-4zG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TSb-5q-UV9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ogg-pm-BvJ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="VqA-py-41W">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择被绑定的享家社区房屋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiR-tH-eHy">
+                                            <rect key="frame" x="94.666666666666671" y="9.6666666666666643" width="185.66666666666663" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.23529411764705882" green="0.2627450980392157" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="aiR-tH-eHy" firstAttribute="centerX" secondItem="VqA-py-41W" secondAttribute="centerX" id="H0q-ga-0q2"/>
+                                        <constraint firstItem="aiR-tH-eHy" firstAttribute="centerY" secondItem="VqA-py-41W" secondAttribute="centerY" id="Wqx-zq-Cbj"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="houseCell" rowHeight="55" id="Tdr-B2-Mz1" customClass="GSHDefenceAlarmAuthBindHouseCell">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tdr-B2-Mz1" id="7pD-UJ-DQi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNV-HE-drb">
+                                                    <rect key="frame" x="16" y="18" width="284" height="19.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1S-t8-QZa">
+                                                    <rect key="frame" x="310" y="0.0" width="55" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="55" id="Mva-Ac-M6r"/>
+                                                    </constraints>
+                                                    <state key="selected" image="app_sele_b"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="V1S-t8-QZa" firstAttribute="top" secondItem="7pD-UJ-DQi" secondAttribute="top" id="McT-eW-DHM"/>
+                                                <constraint firstAttribute="bottom" secondItem="V1S-t8-QZa" secondAttribute="bottom" id="RE1-vg-vlT"/>
+                                                <constraint firstItem="vNV-HE-drb" firstAttribute="centerY" secondItem="7pD-UJ-DQi" secondAttribute="centerY" id="Uv3-fJ-grg"/>
+                                                <constraint firstAttribute="trailing" secondItem="vNV-HE-drb" secondAttribute="trailing" constant="75" id="fUw-wl-0v1"/>
+                                                <constraint firstAttribute="trailing" secondItem="V1S-t8-QZa" secondAttribute="trailing" constant="10" id="hkS-ZS-jLt"/>
+                                                <constraint firstItem="vNV-HE-drb" firstAttribute="leading" secondItem="7pD-UJ-DQi" secondAttribute="leading" constant="16" id="l2e-V1-LY8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkButton" destination="V1S-t8-QZa" id="iHt-43-9me"/>
+                                            <outlet property="houseNameLabel" destination="vNV-HE-drb" id="uHT-jw-IjY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="e2g-wI-F9b" id="Wc8-QH-Jjd"/>
+                                    <outlet property="delegate" destination="e2g-wI-F9b" id="dhR-8M-pH4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ogg-pm-BvJ" firstAttribute="leading" secondItem="TSb-5q-UV9" secondAttribute="leading" id="CjC-ql-lvc"/>
+                            <constraint firstAttribute="trailing" secondItem="Ogg-pm-BvJ" secondAttribute="trailing" id="Lzw-kk-eMr"/>
+                            <constraint firstItem="Ogg-pm-BvJ" firstAttribute="top" secondItem="zro-Ku-iHz" secondAttribute="bottom" id="QQm-6O-Pxt"/>
+                            <constraint firstItem="EaL-nb-4zG" firstAttribute="top" secondItem="Ogg-pm-BvJ" secondAttribute="bottom" id="uPj-pN-VMC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="绑定房屋" id="Ihc-FX-dh3">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="180-KQ-omM">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xyB-d9-0dB">
+                                <rect key="frame" x="299" y="7" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="0.1803921568627451" green="0.69019607843137254" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonClick:" destination="e2g-wI-F9b" eventType="touchUpInside" id="vca-LG-iw4"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="houseTableView" destination="Ogg-pm-BvJ" id="eu2-Uo-bBU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvT-Te-c3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_sele_b" width="20" height="20"/>
+        <image name="defenceAuth_add" width="18" height="18"/>
+        <image name="defenceAuth_bind_normal" width="20" height="29"/>
+        <image name="defenceAuth_bind_sel" width="20" height="29"/>
+    </resources>
+</document>

@@ -10,6 +10,9 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (strong, nonatomic) UIWindow *window;
+
+- (void)changeRootController:(UIViewController *)controller animate:(BOOL)animate;
 
 @end
 

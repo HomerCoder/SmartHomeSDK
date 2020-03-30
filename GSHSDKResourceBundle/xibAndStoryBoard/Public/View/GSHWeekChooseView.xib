@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSHWeekChooseView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xw-Tu-Ikg">
+                    <rect key="frame" x="0.0" y="0.0" width="59" height="60"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sv-qH-RIk">
+                            <rect key="frame" x="11.5" y="12" width="36" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="一" backgroundImage="yingshi_huoDongJianCeSettingVC_week_n">
+                                <color key="titleColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="yingshi_huoDongJianCeSettingVC_week_s"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#585858"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#ffffff"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="weekButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="tpo-lu-yb6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="5Sv-qH-RIk" firstAttribute="centerY" secondItem="7xw-Tu-Ikg" secondAttribute="centerY" id="GlH-qu-Vno"/>
+                        <constraint firstItem="5Sv-qH-RIk" firstAttribute="centerX" secondItem="7xw-Tu-Ikg" secondAttribute="centerX" id="oKD-jP-k6Q"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiA-O0-aUl">
+                    <rect key="frame" x="59" y="0.0" width="59.5" height="60"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9j-hK-zJv">
+                            <rect key="frame" x="11.5" y="12" width="36" height="36"/>
+                            <state key="normal" title="二" backgroundImage="yingshi_huoDongJianCeSettingVC_week_n">
+                                <color key="titleColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="yingshi_huoDongJianCeSettingVC_week_s"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#585858"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#ffffff"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="weekButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Con-4x-qLf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="l9j-hK-zJv" firstAttribute="centerX" secondItem="hiA-O0-aUl" secondAttribute="centerX" id="abp-lv-LU7"/>
+                        <constraint firstItem="l9j-hK-zJv" firstAttribute="centerY" secondItem="hiA-O0-aUl" secondAttribute="centerY" id="v6H-Yf-GTp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCH-3W-k0N">
+                    <rect key="frame" x="118.5" y="0.0" width="59" height="60"/>
+                    <subviews>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31l-o1-rxR">
+                            <rect key="frame" x="11.5" y="12" width="36" height="36"/>
+                            <state key="normal" title="三" backgroundImage="yingshi_huoDongJianCeSettingVC_week_n">
+                                <color key="titleColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="yingshi_huoDongJianCeSettingVC_week_s"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#585858"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#ffffff"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="weekButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="iu4-al-nRt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="31l-o1-rxR" firstAttribute="centerY" secondItem="PCH-3W-k0N" secondAttribute="centerY" id="Bbs-LL-y2f"/>
+                        <constraint firstItem="31l-o1-rxR" firstAttribute="centerX" secondItem="PCH-3W-k0N" secondAttribute="centerX" id="QoY-B3-bQ9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJF-I1-9PR">
+                    <rect key="frame" x="177.5" y="0.0" width="59" height="60"/>
+                    <subviews>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHl-Wl-aO0">
+                            <rect key="frame" x="11.5" y="12" width="36" height="36"/>
+                            <state key="normal" title="四" backgroundImage="yingshi_huoDongJianCeSettingVC_week_n">
+                                <color key="titleColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="yingshi_huoDongJianCeSettingVC_week_s"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#585858"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#ffffff"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="weekButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="8xt-B1-Fpa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="MHl-Wl-aO0" firstAttribute="centerX" secondItem="eJF-I1-9PR" secondAttribute="centerX" id="ASh-KY-jHe"/>
+                        <constraint firstItem="MHl-Wl-aO0" firstAttribute="centerY" secondItem="eJF-I1-9PR" secondAttribute="centerY" id="Yxa-IK-X2c"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zda-F9-df8">
+                    <rect key="frame" x="236.5" y="0.0" width="59" height="60"/>
+                    <subviews>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgi-vx-2vQ">
+                            <rect key="frame" x="11.5" y="12" width="36" height="36"/>
+                            <state key="normal" title="五" backgroundImage="yingshi_huoDongJianCeSettingVC_week_n">
+                                <color key="titleColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="yingshi_huoDongJianCeSettingVC_week_s"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#585858"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#ffffff"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="weekButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Gkt-oc-DhV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="dgi-vx-2vQ" firstAttribute="centerX" secondItem="Zda-F9-df8" secondAttribute="centerX" id="XQz-Uf-Do7"/>
+                        <constraint firstItem="dgi-vx-2vQ" firstAttribute="centerY" secondItem="Zda-F9-df8" secondAttribute="centerY" id="fXR-Nq-tfy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77T-cf-UyN">
+                    <rect key="frame" x="295.5" y="0.0" width="59.5" height="60"/>
+                    <subviews>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY7-bC-cpm">
+                            <rect key="frame" x="12" y="12" width="36" height="36"/>
+                            <state key="normal" title="六" backgroundImage="yingshi_huoDongJianCeSettingVC_week_n">
+                                <color key="titleColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="yingshi_huoDongJianCeSettingVC_week_s"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#585858"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#ffffff"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="weekButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="qBw-K1-iOc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="TY7-bC-cpm" firstAttribute="centerX" secondItem="77T-cf-UyN" secondAttribute="centerX" id="IOz-cC-abr"/>
+                        <constraint firstItem="TY7-bC-cpm" firstAttribute="centerY" secondItem="77T-cf-UyN" secondAttribute="centerY" id="mIr-4A-hdI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cp-iU-6Jr">
+                    <rect key="frame" x="355" y="0.0" width="59" height="60"/>
+                    <subviews>
+                        <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jn-rK-uE0">
+                            <rect key="frame" x="11.5" y="12" width="36" height="36"/>
+                            <state key="normal" title="日" backgroundImage="yingshi_huoDongJianCeSettingVC_week_n">
+                                <color key="titleColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="yingshi_huoDongJianCeSettingVC_week_s"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#585858"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#ffffff"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="weekButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="qrV-Zo-qjX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="8jn-rK-uE0" firstAttribute="centerX" secondItem="8cp-iU-6Jr" secondAttribute="centerX" id="enP-We-vmR"/>
+                        <constraint firstItem="8jn-rK-uE0" firstAttribute="centerY" secondItem="8cp-iU-6Jr" secondAttribute="centerY" id="jM2-Ck-o7w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hiA-O0-aUl" firstAttribute="width" secondItem="7xw-Tu-Ikg" secondAttribute="width" id="055-PE-0av"/>
+                <constraint firstItem="Zda-F9-df8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="29w-8Z-WNi"/>
+                <constraint firstAttribute="bottom" secondItem="PCH-3W-k0N" secondAttribute="bottom" id="2b0-m6-kHh"/>
+                <constraint firstItem="Zda-F9-df8" firstAttribute="leading" secondItem="eJF-I1-9PR" secondAttribute="trailing" id="4gR-ew-eyz"/>
+                <constraint firstItem="7xw-Tu-Ikg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6LB-dl-Coa"/>
+                <constraint firstItem="eJF-I1-9PR" firstAttribute="leading" secondItem="PCH-3W-k0N" secondAttribute="trailing" id="6qd-Oa-MDu"/>
+                <constraint firstAttribute="bottom" secondItem="8cp-iU-6Jr" secondAttribute="bottom" id="87o-pc-zYx"/>
+                <constraint firstItem="PCH-3W-k0N" firstAttribute="leading" secondItem="hiA-O0-aUl" secondAttribute="trailing" id="Axp-JM-4Qo"/>
+                <constraint firstItem="77T-cf-UyN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FIJ-Ul-JRH"/>
+                <constraint firstItem="Zda-F9-df8" firstAttribute="width" secondItem="7xw-Tu-Ikg" secondAttribute="width" id="IX9-aW-4tF"/>
+                <constraint firstItem="eJF-I1-9PR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ipp-zd-vAF"/>
+                <constraint firstAttribute="bottom" secondItem="77T-cf-UyN" secondAttribute="bottom" id="JmR-HO-zIc"/>
+                <constraint firstItem="8cp-iU-6Jr" firstAttribute="width" secondItem="7xw-Tu-Ikg" secondAttribute="width" id="KS8-ZI-uF3"/>
+                <constraint firstItem="77T-cf-UyN" firstAttribute="width" secondItem="7xw-Tu-Ikg" secondAttribute="width" id="Na3-A3-Maj"/>
+                <constraint firstItem="8cp-iU-6Jr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Pg6-O5-XrL"/>
+                <constraint firstItem="hiA-O0-aUl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UB0-TM-aNw"/>
+                <constraint firstAttribute="bottom" secondItem="Zda-F9-df8" secondAttribute="bottom" id="UEX-iX-B1J"/>
+                <constraint firstAttribute="trailing" secondItem="8cp-iU-6Jr" secondAttribute="trailing" id="WAF-Vm-Db8"/>
+                <constraint firstItem="8cp-iU-6Jr" firstAttribute="leading" secondItem="77T-cf-UyN" secondAttribute="trailing" id="Wer-xH-mIE"/>
+                <constraint firstItem="hiA-O0-aUl" firstAttribute="leading" secondItem="7xw-Tu-Ikg" secondAttribute="trailing" id="cdQ-ug-tYD"/>
+                <constraint firstItem="77T-cf-UyN" firstAttribute="leading" secondItem="Zda-F9-df8" secondAttribute="trailing" id="e7k-XE-5U8"/>
+                <constraint firstItem="PCH-3W-k0N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fze-Dy-rRZ"/>
+                <constraint firstAttribute="bottom" secondItem="7xw-Tu-Ikg" secondAttribute="bottom" id="gFc-Cc-cx7"/>
+                <constraint firstItem="PCH-3W-k0N" firstAttribute="width" secondItem="7xw-Tu-Ikg" secondAttribute="width" id="pIy-XF-idf"/>
+                <constraint firstAttribute="bottom" secondItem="eJF-I1-9PR" secondAttribute="bottom" id="sCr-ya-lS7"/>
+                <constraint firstItem="7xw-Tu-Ikg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="v7F-2g-X2r"/>
+                <constraint firstAttribute="bottom" secondItem="hiA-O0-aUl" secondAttribute="bottom" id="wfZ-WA-tG0"/>
+                <constraint firstItem="eJF-I1-9PR" firstAttribute="width" secondItem="7xw-Tu-Ikg" secondAttribute="width" id="zOt-ah-6XE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="weekButtonArray" destination="5Sv-qH-RIk" id="IhD-aq-pST"/>
+                <outletCollection property="weekButtonArray" destination="l9j-hK-zJv" id="0pa-zP-ppa"/>
+                <outletCollection property="weekButtonArray" destination="31l-o1-rxR" id="h5z-SB-pkA"/>
+                <outletCollection property="weekButtonArray" destination="MHl-Wl-aO0" id="x1T-hc-VwN"/>
+                <outletCollection property="weekButtonArray" destination="dgi-vx-2vQ" id="evr-35-2OJ"/>
+                <outletCollection property="weekButtonArray" destination="TY7-bC-cpm" id="qup-mc-3OV"/>
+                <outletCollection property="weekButtonArray" destination="8jn-rK-uE0" id="Bqr-45-Lna"/>
+            </connections>
+            <point key="canvasLocation" x="48.75" y="35.91549295774648"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="yingshi_huoDongJianCeSettingVC_week_n" width="36" height="36"/>
+        <image name="yingshi_huoDongJianCeSettingVC_week_s" width="36" height="36"/>
+    </resources>
+</document>

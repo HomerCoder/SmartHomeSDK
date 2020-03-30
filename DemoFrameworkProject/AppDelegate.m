@@ -17,9 +17,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
+- (void)changeRootController:(UIViewController *)controller animate:(BOOL)animate {
+    CATransition *transition = [CATransition animation];
+    transition.duration = animate ? 0.5 : 0;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionFade;
+    if (self.window.rootViewController) {
+        self.window.rootViewController = nil;
+    }
+    [self.window setRootViewController:controller];
+    [self.window.layer addAnimation:transition forKey:@"animation"];
+}
 
 #pragma mark - UISceneSession lifecycle
 

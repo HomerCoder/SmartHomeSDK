@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GSHSceneBackCell">
+            <rect key="frame" x="0.0" y="0.0" width="107.5" height="113.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="107.5" height="113.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IsB-Or-55m">
+                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="113.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon_checkbox_select" translatesAutoresizingMaskIntoConstraints="NO" id="Eds-NO-8bE">
+                        <rect key="frame" x="77.5" y="6" width="24" height="24"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IsB-Or-55m" secondAttribute="bottom" id="3Z0-wp-FB4"/>
+                <constraint firstItem="IsB-Or-55m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5jM-EB-cL1"/>
+                <constraint firstAttribute="trailing" secondItem="Eds-NO-8bE" secondAttribute="trailing" constant="6" id="89O-yN-JIM"/>
+                <constraint firstItem="Eds-NO-8bE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="ObN-0h-MYf"/>
+                <constraint firstItem="IsB-Or-55m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ROb-Xx-IPc"/>
+                <constraint firstAttribute="trailing" secondItem="IsB-Or-55m" secondAttribute="trailing" id="VWz-bC-Ckq"/>
+            </constraints>
+            <connections>
+                <outlet property="checkBoxImageView" destination="Eds-NO-8bE" id="LTk-0i-X0T"/>
+                <outlet property="sceneBackImageView" destination="IsB-Or-55m" id="Nik-LB-zb5"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="app_icon_checkbox_select" width="24" height="24"/>
+    </resources>
+</document>

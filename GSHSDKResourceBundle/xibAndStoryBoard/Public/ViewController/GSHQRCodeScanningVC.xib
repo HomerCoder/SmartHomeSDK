@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSHQRCodeScanningVC">
+            <connections>
+                <outlet property="btnShanGuang" destination="b9q-bx-ehk" id="IwS-3D-57K"/>
+                <outlet property="lblText" destination="OjN-Qn-FZ4" id="fB2-6M-vbk"/>
+                <outlet property="lineView" destination="NQl-f2-Cu5" id="0EM-vh-w96"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrCodeScanningVC_border_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rxd-6a-0wx">
+                    <rect key="frame" x="67.5" y="147" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rxd-6a-0wx" secondAttribute="height" id="vPv-dG-ibu"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD9-fn-T8Q">
+                    <rect key="frame" x="70.5" y="150" width="234" height="234"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrCodeScanningVC_line_icon" translatesAutoresizingMaskIntoConstraints="NO" id="NQl-f2-Cu5">
+                            <rect key="frame" x="0.0" y="0.0" width="234" height="2"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="Ric-to-vEV"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="NQl-f2-Cu5" firstAttribute="leading" secondItem="RD9-fn-T8Q" secondAttribute="leading" id="FiL-BX-I3d"/>
+                        <constraint firstAttribute="trailing" secondItem="NQl-f2-Cu5" secondAttribute="trailing" id="Lqa-KZ-QwV"/>
+                        <constraint firstItem="NQl-f2-Cu5" firstAttribute="top" secondItem="RD9-fn-T8Q" secondAttribute="top" id="XwA-Aa-IpT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSq-1X-bkW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="z_backgroundColor" value="#00000088"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwe-1s-kCC">
+                    <rect key="frame" x="0.0" y="387" width="375" height="280"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将成员二维码放入框内，即可扫描" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjN-Qn-FZ4">
+                            <rect key="frame" x="30" y="24" width="315" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="z_titleColor" value="#ffffff"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9q-bx-ehk">
+                            <rect key="frame" x="163.5" y="200" width="48" height="48"/>
+                            <state key="normal" image="qrCodeScanningVC_shanGuang_icon_n"/>
+                            <state key="selected" image="qrCodeScanningVC_shanGuang_icon_s"/>
+                            <connections>
+                                <action selector="touchShanGuang:" destination="-1" eventType="touchUpInside" id="mXl-be-Zbk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="OjN-Qn-FZ4" firstAttribute="top" secondItem="bwe-1s-kCC" secondAttribute="top" constant="24" id="ISz-Jb-c2w"/>
+                        <constraint firstAttribute="bottom" secondItem="b9q-bx-ehk" secondAttribute="bottom" constant="32" id="NXd-Qo-NGg"/>
+                        <constraint firstAttribute="trailing" secondItem="OjN-Qn-FZ4" secondAttribute="trailing" constant="30" id="m57-SC-eK9"/>
+                        <constraint firstItem="b9q-bx-ehk" firstAttribute="centerX" secondItem="bwe-1s-kCC" secondAttribute="centerX" id="ozf-SN-Y9G"/>
+                        <constraint firstItem="OjN-Qn-FZ4" firstAttribute="leading" secondItem="bwe-1s-kCC" secondAttribute="leading" constant="30" id="tUT-Cv-mLL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="z_backgroundColor" value="#00000088"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q22-4J-e1h">
+                    <rect key="frame" x="307.5" y="147" width="67.5" height="240"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="z_backgroundColor" value="#00000088"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa5-Ke-uXf">
+                    <rect key="frame" x="0.0" y="147" width="67.5" height="240"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="z_backgroundColor" value="#00000088"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RD9-fn-T8Q" firstAttribute="leading" secondItem="rxd-6a-0wx" secondAttribute="leading" constant="3" id="5FA-rr-bdd"/>
+                <constraint firstAttribute="trailing" secondItem="Q22-4J-e1h" secondAttribute="trailing" id="5YC-Rc-RHf"/>
+                <constraint firstItem="bwe-1s-kCC" firstAttribute="top" secondItem="rxd-6a-0wx" secondAttribute="bottom" id="8bB-oS-cNe"/>
+                <constraint firstItem="Q22-4J-e1h" firstAttribute="leading" secondItem="rxd-6a-0wx" secondAttribute="trailing" id="FMe-5V-wYA"/>
+                <constraint firstAttribute="trailing" secondItem="bwe-1s-kCC" secondAttribute="trailing" id="H2u-CI-gqh"/>
+                <constraint firstItem="RD9-fn-T8Q" firstAttribute="top" secondItem="rxd-6a-0wx" secondAttribute="top" constant="3" id="Lg4-sY-DZ6"/>
+                <constraint firstItem="rxd-6a-0wx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8/1" id="LsU-8j-grb"/>
+                <constraint firstItem="rxd-6a-0wx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="67.5" id="MF8-eT-iDA"/>
+                <constraint firstItem="Q22-4J-e1h" firstAttribute="top" secondItem="pSq-1X-bkW" secondAttribute="bottom" id="PvF-7J-Lzs"/>
+                <constraint firstItem="pSq-1X-bkW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QJn-iQ-g1x"/>
+                <constraint firstItem="bwe-1s-kCC" firstAttribute="top" secondItem="Oa5-Ke-uXf" secondAttribute="bottom" id="QnT-BU-iTh"/>
+                <constraint firstItem="rxd-6a-0wx" firstAttribute="leading" secondItem="Oa5-Ke-uXf" secondAttribute="trailing" id="R92-T2-p9h"/>
+                <constraint firstAttribute="trailing" secondItem="rxd-6a-0wx" secondAttribute="trailing" constant="67.5" id="UXq-Vg-tgQ"/>
+                <constraint firstItem="RD9-fn-T8Q" firstAttribute="trailing" secondItem="rxd-6a-0wx" secondAttribute="trailing" constant="-3" id="Wcn-IZ-D7d"/>
+                <constraint firstItem="pSq-1X-bkW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zqr-cC-2Au"/>
+                <constraint firstAttribute="trailing" secondItem="pSq-1X-bkW" secondAttribute="trailing" id="b5a-Ur-jQf"/>
+                <constraint firstItem="Oa5-Ke-uXf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bb7-IN-WDk"/>
+                <constraint firstItem="bwe-1s-kCC" firstAttribute="top" secondItem="Q22-4J-e1h" secondAttribute="bottom" id="egr-AK-ptH"/>
+                <constraint firstItem="RD9-fn-T8Q" firstAttribute="bottom" secondItem="rxd-6a-0wx" secondAttribute="bottom" constant="-3" id="jkL-AP-XEx"/>
+                <constraint firstItem="bwe-1s-kCC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kX6-6V-WX3"/>
+                <constraint firstItem="rxd-6a-0wx" firstAttribute="top" secondItem="pSq-1X-bkW" secondAttribute="bottom" id="nDR-r6-tce"/>
+                <constraint firstAttribute="bottom" secondItem="bwe-1s-kCC" secondAttribute="bottom" id="t9z-NJ-Kj3"/>
+                <constraint firstItem="Oa5-Ke-uXf" firstAttribute="top" secondItem="pSq-1X-bkW" secondAttribute="bottom" id="ybf-ZI-4r4"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qrCodeScanningVC_border_icon" width="63" height="64.5"/>
+        <image name="qrCodeScanningVC_line_icon" width="240" height="2"/>
+        <image name="qrCodeScanningVC_shanGuang_icon_n" width="48" height="48"/>
+        <image name="qrCodeScanningVC_shanGuang_icon_s" width="48" height="48"/>
+    </resources>
+</document>

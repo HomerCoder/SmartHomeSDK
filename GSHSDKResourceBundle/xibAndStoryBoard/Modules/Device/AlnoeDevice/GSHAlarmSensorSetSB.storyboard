@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alarm Sensor SetVC-->
+        <scene sceneID="jpB-wB-8Z0">
+            <objects>
+                <viewController storyboardIdentifier="GSHAlarmSensorSetVC" id="vcA-Z5-Tmg" customClass="GSHAlarmSensorSetVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vLD-i9-Yrc"/>
+                        <viewControllerLayoutGuide type="bottom" id="UlC-gt-fWb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M79-tb-Rqt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4Q-g5-diU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVM-aK-A8y">
+                                        <rect key="frame" x="275" y="0.0" width="80" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="SOP-cX-CXm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="确定">
+                                            <color key="titleColor" red="0.18039215689999999" green="0.69019607839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sureButtonClick:" destination="vcA-Z5-Tmg" eventType="touchUpInside" id="ABu-8F-hs2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="传感器名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTC-ce-4gC">
+                                        <rect key="frame" x="97.5" y="4.5" width="180" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="9aK-IR-zTn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="CVM-aK-A8y" firstAttribute="top" secondItem="D4Q-g5-diU" secondAttribute="top" id="AfL-Jy-sce"/>
+                                    <constraint firstAttribute="height" constant="30" id="Tdr-WY-d8K"/>
+                                    <constraint firstItem="xTC-ce-4gC" firstAttribute="centerX" secondItem="D4Q-g5-diU" secondAttribute="centerX" id="YKm-Qz-yn4"/>
+                                    <constraint firstAttribute="trailing" secondItem="CVM-aK-A8y" secondAttribute="trailing" constant="20" id="e9H-or-tpG"/>
+                                    <constraint firstAttribute="bottom" secondItem="CVM-aK-A8y" secondAttribute="bottom" id="gNV-Sk-pIz"/>
+                                    <constraint firstItem="xTC-ce-4gC" firstAttribute="centerY" secondItem="D4Q-g5-diU" secondAttribute="centerY" id="iln-A4-9Ge"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_icon_image" translatesAutoresizingMaskIntoConstraints="NO" id="Jgo-Cx-PzH">
+                                <rect key="frame" x="125" y="50" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="2md-OG-ybE"/>
+                                    <constraint firstAttribute="height" constant="125" id="cwD-RD-SBX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态设置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viJ-Ub-jdK">
+                                <rect key="frame" x="159" y="207" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggt-zz-qOW" customClass="TZMButton">
+                                <rect key="frame" x="224.5" y="256.5" width="96" height="96"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="告警" image="device_sensor_alarm">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" image="device_sensor_alarm_sel">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="device_sensor_alarm_sel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageDirection">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="alarmButtonClick:" destination="vcA-Z5-Tmg" eventType="touchUpInside" id="7jO-ar-JNi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPW-OL-Qta" customClass="TZMButton">
+                                <rect key="frame" x="58.5" y="256.5" width="96" height="96"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="AQF-30-ntg"/>
+                                    <constraint firstAttribute="height" constant="96" id="H9R-4l-cDO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="正常" image="device_sensor_normal">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" image="device_sensor_normal_sel">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="device_sensor_normal_sel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageDirection">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="normalButtonClick:" destination="vcA-Z5-Tmg" eventType="touchUpInside" id="wkz-4x-2im"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D4Q-g5-diU" firstAttribute="top" secondItem="vLD-i9-Yrc" secondAttribute="bottom" id="6pE-qb-eJZ"/>
+                            <constraint firstItem="nPW-OL-Qta" firstAttribute="top" secondItem="viJ-Ub-jdK" secondAttribute="bottom" constant="32.5" id="707-h7-qA6"/>
+                            <constraint firstItem="ggt-zz-qOW" firstAttribute="top" secondItem="nPW-OL-Qta" secondAttribute="top" id="AWR-kd-crN"/>
+                            <constraint firstItem="Jgo-Cx-PzH" firstAttribute="centerX" secondItem="M79-tb-Rqt" secondAttribute="centerX" id="C0X-UP-If8"/>
+                            <constraint firstItem="ggt-zz-qOW" firstAttribute="leading" secondItem="nPW-OL-Qta" secondAttribute="trailing" constant="70" id="DcC-a2-Xw3"/>
+                            <constraint firstItem="nPW-OL-Qta" firstAttribute="centerX" secondItem="M79-tb-Rqt" secondAttribute="centerX" constant="-81" id="I61-f6-hQN"/>
+                            <constraint firstAttribute="trailing" secondItem="D4Q-g5-diU" secondAttribute="trailing" id="aYX-7m-RzK"/>
+                            <constraint firstItem="viJ-Ub-jdK" firstAttribute="centerX" secondItem="M79-tb-Rqt" secondAttribute="centerX" id="bMd-VJ-sl4"/>
+                            <constraint firstItem="viJ-Ub-jdK" firstAttribute="top" secondItem="Jgo-Cx-PzH" secondAttribute="bottom" constant="32" id="fLq-Zf-dyG"/>
+                            <constraint firstItem="ggt-zz-qOW" firstAttribute="height" secondItem="nPW-OL-Qta" secondAttribute="height" id="p8X-md-LgT"/>
+                            <constraint firstItem="ggt-zz-qOW" firstAttribute="width" secondItem="nPW-OL-Qta" secondAttribute="width" id="qjC-9W-KbB"/>
+                            <constraint firstItem="Jgo-Cx-PzH" firstAttribute="top" secondItem="D4Q-g5-diU" secondAttribute="bottom" constant="20" id="uhA-Ji-UAk"/>
+                            <constraint firstItem="D4Q-g5-diU" firstAttribute="leading" secondItem="M79-tb-Rqt" secondAttribute="leading" id="zN6-4M-Mtl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xbj-cf-RZA"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="432"/>
+                    <connections>
+                        <outlet property="alarmButton" destination="ggt-zz-qOW" id="IvH-bU-0s3"/>
+                        <outlet property="guideImageView" destination="Jgo-Cx-PzH" id="RP6-vz-d6l"/>
+                        <outlet property="normalButton" destination="nPW-OL-Qta" id="oaV-Y2-2BT"/>
+                        <outlet property="sensorNameLabel" destination="xTC-ce-4gC" id="4gE-xZ-cMa"/>
+                        <outlet property="sureButton" destination="CVM-aK-A8y" id="fJy-E0-vlb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5Z-Bf-hdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default_icon_image" width="80" height="84"/>
+        <image name="device_sensor_alarm" width="77" height="77"/>
+        <image name="device_sensor_alarm_sel" width="77" height="77"/>
+        <image name="device_sensor_normal" width="77" height="77"/>
+        <image name="device_sensor_normal_sel" width="77" height="77"/>
+    </resources>
+</document>

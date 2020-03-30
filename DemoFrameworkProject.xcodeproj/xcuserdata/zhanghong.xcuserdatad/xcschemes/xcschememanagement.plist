@@ -7,7 +7,25 @@
 		<key>DemoFrameworkProject.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>44</integer>
+		</dict>
+		<key>GSHOpenSDKFrameWork.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>GSHSDKResourceBundle.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>45</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FC68EECF242CE55000033CD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

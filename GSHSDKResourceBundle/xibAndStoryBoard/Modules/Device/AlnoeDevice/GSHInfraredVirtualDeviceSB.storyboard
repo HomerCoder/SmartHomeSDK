@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Infrared Virtual DeviceTVVC-->
+        <scene sceneID="aFj-7d-9gA">
+            <objects>
+                <viewController storyboardIdentifier="GSHInfraredVirtualDeviceTVVC" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S9P-pb-F9f" customClass="GSHInfraredVirtualDeviceTVVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lIY-st-JYR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Skl-tq-S1w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oPf-Y0-Zzh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTn-nr-sCG">
+                                <rect key="frame" x="325" y="0.0" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1IQ-8U-YhB"/>
+                                    <constraint firstAttribute="width" constant="34" id="cdg-Fe-1bo"/>
+                                </constraints>
+                                <state key="normal" image="device_set_btn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchRigthNavBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="Fgh-r1-32c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空调" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr8-5a-34U">
+                                <rect key="frame" x="97.5" y="5" width="180" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Zdo-0Z-r62"/>
+                                    <constraint firstAttribute="width" constant="180" id="zV0-NS-aAf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="z_titleColor" value="#222222"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vHh-fR-O9I">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NgC-bj-kk2">
+                                        <rect key="frame" x="45" y="18" width="285" height="574"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqY-bZ-Mva">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="143.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQX-Oo-MJK">
+                                                        <rect key="frame" x="0.0" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="55" id="Uzx-2B-pvz"/>
+                                                            <constraint firstAttribute="height" constant="55" id="W4M-g8-mZh"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi-1"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-1"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="vqG-Bh-Gpm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJz-6h-1Nw">
+                                                        <rect key="frame" x="115" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="55" id="8xF-iP-j9m"/>
+                                                            <constraint firstAttribute="height" constant="55" id="DqA-GI-Ti3"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi-2"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-2"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="j62-bY-w6j"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMR-Ot-Gca">
+                                                        <rect key="frame" x="230" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="55" id="DmP-Ew-BFa"/>
+                                                            <constraint firstAttribute="height" constant="55" id="GKa-Nd-QP6"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi-3"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-3"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="9Y7-oi-xrA"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="vJz-6h-1Nw" firstAttribute="centerX" secondItem="DqY-bZ-Mva" secondAttribute="centerX" id="4OM-a5-IeT"/>
+                                                    <constraint firstItem="tQX-Oo-MJK" firstAttribute="centerY" secondItem="DqY-bZ-Mva" secondAttribute="centerY" id="5Qn-J4-nR8"/>
+                                                    <constraint firstItem="vJz-6h-1Nw" firstAttribute="centerY" secondItem="DqY-bZ-Mva" secondAttribute="centerY" id="E0n-Sb-MNF"/>
+                                                    <constraint firstAttribute="height" priority="750" constant="55" id="HHS-CQ-FUa"/>
+                                                    <constraint firstItem="yMR-Ot-Gca" firstAttribute="centerY" secondItem="DqY-bZ-Mva" secondAttribute="centerY" id="c6R-GU-xnt"/>
+                                                    <constraint firstItem="tQX-Oo-MJK" firstAttribute="leading" secondItem="DqY-bZ-Mva" secondAttribute="leading" id="qOY-8h-46q"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yMR-Ot-Gca" secondAttribute="trailing" id="sCk-Uu-1KE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCa-w8-up5">
+                                                <rect key="frame" x="0.0" y="143.5" width="285" height="143.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvP-lo-ppt">
+                                                        <rect key="frame" x="0.0" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="55" id="agc-bS-Plc"/>
+                                                            <constraint firstAttribute="height" constant="55" id="sSt-r1-Jxc"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi-4"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-4"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="iA4-pc-7pf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGR-t6-VTb">
+                                                        <rect key="frame" x="115" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="55" id="Tlr-GT-LrZ"/>
+                                                            <constraint firstAttribute="width" constant="55" id="kI9-ud-EcX"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi-5"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-5"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="qPi-TJ-weX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3P-Tc-krp">
+                                                        <rect key="frame" x="230" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="55" id="Rkg-h7-GJg"/>
+                                                            <constraint firstAttribute="width" constant="55" id="kIG-rF-TiZ"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi-6"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-6"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="0tX-x8-nEc"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="g3P-Tc-krp" secondAttribute="trailing" id="4cD-QM-kp4"/>
+                                                    <constraint firstItem="RvP-lo-ppt" firstAttribute="centerY" secondItem="MCa-w8-up5" secondAttribute="centerY" id="TXc-HP-nSN"/>
+                                                    <constraint firstItem="MGR-t6-VTb" firstAttribute="centerX" secondItem="MCa-w8-up5" secondAttribute="centerX" id="W0U-oS-BGv"/>
+                                                    <constraint firstAttribute="height" priority="750" constant="55" id="g1E-iD-cSd"/>
+                                                    <constraint firstItem="RvP-lo-ppt" firstAttribute="leading" secondItem="MCa-w8-up5" secondAttribute="leading" id="r0k-Fq-o6i"/>
+                                                    <constraint firstItem="MGR-t6-VTb" firstAttribute="centerY" secondItem="MCa-w8-up5" secondAttribute="centerY" id="u76-gn-8cc"/>
+                                                    <constraint firstItem="g3P-Tc-krp" firstAttribute="centerY" secondItem="MCa-w8-up5" secondAttribute="centerY" id="zMM-ji-cXu"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROJ-Kw-cmq">
+                                                <rect key="frame" x="0.0" y="287" width="285" height="143.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqn-sK-tK9">
+                                                        <rect key="frame" x="0.0" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="55" id="ElR-e6-mEp"/>
+                                                            <constraint firstAttribute="width" constant="55" id="can-UN-STt"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi-7"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-7"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="puY-yn-N7Y"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZx-5f-JoK">
+                                                        <rect key="frame" x="115" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="55" id="41D-yX-chi"/>
+                                                            <constraint firstAttribute="width" constant="55" id="tz6-QQ-GZ4"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi-8"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-8"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="iAp-8N-UnV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeD-wU-qu2">
+                                                        <rect key="frame" x="230" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="55" id="nR5-r8-Lih"/>
+                                                            <constraint firstAttribute="width" constant="55" id="sDh-PT-KNq"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi-9"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-9"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="UJv-Uy-UT4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Lqn-sK-tK9" firstAttribute="centerY" secondItem="ROJ-Kw-cmq" secondAttribute="centerY" id="0b2-nF-mFp"/>
+                                                    <constraint firstItem="Lqn-sK-tK9" firstAttribute="leading" secondItem="ROJ-Kw-cmq" secondAttribute="leading" id="3gH-eC-6ef"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WeD-wU-qu2" secondAttribute="trailing" id="Coi-IG-4nS"/>
+                                                    <constraint firstItem="WZx-5f-JoK" firstAttribute="centerY" secondItem="ROJ-Kw-cmq" secondAttribute="centerY" id="RWH-we-7ab"/>
+                                                    <constraint firstItem="WeD-wU-qu2" firstAttribute="centerY" secondItem="ROJ-Kw-cmq" secondAttribute="centerY" id="ZBu-Ub-toz"/>
+                                                    <constraint firstItem="WZx-5f-JoK" firstAttribute="centerX" secondItem="ROJ-Kw-cmq" secondAttribute="centerX" id="eaP-Ad-Ynw"/>
+                                                    <constraint firstAttribute="height" priority="750" constant="55" id="n5G-dg-vBi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PS8-dO-tIy">
+                                                <rect key="frame" x="0.0" y="430.5" width="285" height="143.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QK-Yy-Rtp">
+                                                        <rect key="frame" x="0.0" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="55" id="LOb-VZ-aSc"/>
+                                                            <constraint firstAttribute="height" constant="55" id="XZf-Ew-QzR"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_toHome"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_toHome_h"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="FSe-dy-XeJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udm-FW-NIF">
+                                                        <rect key="frame" x="115" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="55" id="JfJ-Uh-WMg"/>
+                                                            <constraint firstAttribute="width" constant="55" id="ouI-yv-Zcl"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi-0"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-0"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="hZu-aS-Zdm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBe-Fn-LHo">
+                                                        <rect key="frame" x="230" y="44.5" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="55" id="Ikh-Fu-BOF"/>
+                                                            <constraint firstAttribute="width" constant="55" id="leq-IH-hsL"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_fanHui"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_fanHui_h"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="K4F-dd-hEd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="5QK-Yy-Rtp" firstAttribute="leading" secondItem="PS8-dO-tIy" secondAttribute="leading" id="9FS-U2-8PE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aBe-Fn-LHo" secondAttribute="trailing" id="Pya-JC-DNp"/>
+                                                    <constraint firstItem="Udm-FW-NIF" firstAttribute="centerY" secondItem="PS8-dO-tIy" secondAttribute="centerY" id="Y3Y-0D-jXH"/>
+                                                    <constraint firstItem="Udm-FW-NIF" firstAttribute="centerX" secondItem="PS8-dO-tIy" secondAttribute="centerX" id="bvQ-Bs-H04"/>
+                                                    <constraint firstItem="aBe-Fn-LHo" firstAttribute="centerY" secondItem="PS8-dO-tIy" secondAttribute="centerY" id="cLc-Hv-UKG"/>
+                                                    <constraint firstAttribute="height" priority="750" constant="55" id="tLM-iX-K8K"/>
+                                                    <constraint firstItem="5QK-Yy-Rtp" firstAttribute="centerY" secondItem="PS8-dO-tIy" secondAttribute="centerY" id="wsC-A4-iEz"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NgC-bj-kk2" firstAttribute="top" secondItem="vHh-fR-O9I" secondAttribute="top" constant="18" id="6ao-Yi-YyD"/>
+                                    <constraint firstAttribute="trailing" secondItem="NgC-bj-kk2" secondAttribute="trailing" constant="45" id="RWF-qq-jii"/>
+                                    <constraint firstItem="NgC-bj-kk2" firstAttribute="leading" secondItem="vHh-fR-O9I" secondAttribute="leading" constant="45" id="S4K-Zk-gCa"/>
+                                    <constraint firstAttribute="bottom" secondItem="NgC-bj-kk2" secondAttribute="bottom" constant="25" id="zws-u0-D0o"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uk3-N2-sLN">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVH-CJ-OSh">
+                                        <rect key="frame" x="45" y="18" width="285" height="55"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Wuc-T2-ha1">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gM3-hg-X4k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" priority="999" constant="55" id="VkV-4j-znd"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_tvOff"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_tvOff_h"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="zCo-o9-Eao"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXv-ia-jJ7">
+                                                        <rect key="frame" x="76.5" y="0.0" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" priority="999" constant="55" id="gSp-w8-dq0"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_off"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_off_h"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="n8b-og-2E9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u67-O9-Y0o">
+                                                        <rect key="frame" x="153.5" y="0.0" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" priority="999" constant="55" id="l1t-dd-IpA"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_caiDan"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_caiDan_h"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="1Dr-Z8-cq9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwJ-kJ-gke">
+                                                        <rect key="frame" x="230" y="0.0" width="55" height="55"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" priority="999" constant="55" id="65U-b2-WzW"/>
+                                                        </constraints>
+                                                        <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_jingYin"/>
+                                                        <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_jingYin_h"/>
+                                                        <connections>
+                                                            <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="1gA-6u-jrw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Wuc-T2-ha1" firstAttribute="leading" secondItem="NVH-CJ-OSh" secondAttribute="leading" id="3Ao-Lb-GV3"/>
+                                            <constraint firstAttribute="width" constant="285" id="AWF-9h-Tzn"/>
+                                            <constraint firstAttribute="height" constant="55" id="cF8-Lq-Mfq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wuc-T2-ha1" secondAttribute="trailing" id="iG4-Sg-Yql"/>
+                                            <constraint firstAttribute="bottom" secondItem="Wuc-T2-ha1" secondAttribute="bottom" id="jDG-up-4mz"/>
+                                            <constraint firstItem="Wuc-T2-ha1" firstAttribute="top" secondItem="NVH-CJ-OSh" secondAttribute="top" id="lOg-49-L1a"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="0fX-0R-HVA">
+                                        <rect key="frame" x="47.5" y="113" width="280" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GSHInfraredVirtualDeviceTVVC_icon_yinLiang_bg" translatesAutoresizingMaskIntoConstraints="NO" id="vdR-AW-mSY">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="150"/>
+                                            </imageView>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s27-EG-KRF">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="64.5"/>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_yinLiangJia"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_yinLiangJia_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="1ad-tp-zxb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK6-hH-Ebw">
+                                                <rect key="frame" x="0.0" y="85.5" width="50" height="64.5"/>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_yinLiangJian"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_yinLiangJian_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="ZfJ-aJ-xX3"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GSHInfraredVirtualDeviceTVVC_icon_yuan_bg" translatesAutoresizingMaskIntoConstraints="NO" id="QQ7-kd-hme">
+                                                <rect key="frame" x="65" y="0.0" width="150" height="150"/>
+                                            </imageView>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7b-B4-ngW">
+                                                <rect key="frame" x="115" y="53" width="50" height="44"/>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_ok"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_ok_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="Ox5-24-IyG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="947-sL-RZG">
+                                                <rect key="frame" x="115" y="0.0" width="50" height="50"/>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_shang"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_shang_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="eug-lF-Wqm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXF-JV-Pbf">
+                                                <rect key="frame" x="165" y="50" width="50" height="50"/>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_you"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_you_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="XOI-LF-e9Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM8-w4-Lw5">
+                                                <rect key="frame" x="115" y="100" width="50" height="50"/>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_xia"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_xia_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="Kj2-Sq-7bc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwL-td-x8c">
+                                                <rect key="frame" x="65" y="50" width="50" height="50"/>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_zuo"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_zuo_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="39a-bd-QBi"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GSHInfraredVirtualDeviceTVVC_icon_pinDao_bg" translatesAutoresizingMaskIntoConstraints="NO" id="2X1-eU-Yn6">
+                                                <rect key="frame" x="230" y="0.0" width="50" height="150"/>
+                                            </imageView>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-1T-gBq">
+                                                <rect key="frame" x="230" y="0.0" width="50" height="64.5"/>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_pinDaoJia"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_pinDaoJia_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="atL-FD-YJt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5t-nu-M0e">
+                                                <rect key="frame" x="230" y="85.5" width="50" height="64.5"/>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_pinDaoJian"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_pinDaoJian_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="wfX-Kv-fYX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2X1-eU-Yn6" firstAttribute="centerY" secondItem="0fX-0R-HVA" secondAttribute="centerY" id="19b-Oi-FjQ"/>
+                                            <constraint firstItem="a7b-B4-ngW" firstAttribute="centerX" secondItem="0fX-0R-HVA" secondAttribute="centerX" id="1h5-bu-aND"/>
+                                            <constraint firstItem="BwL-td-x8c" firstAttribute="leading" secondItem="QQ7-kd-hme" secondAttribute="leading" id="3nv-YL-hdQ"/>
+                                            <constraint firstItem="YXF-JV-Pbf" firstAttribute="trailing" secondItem="QQ7-kd-hme" secondAttribute="trailing" id="5J9-9d-5bB"/>
+                                            <constraint firstAttribute="width" constant="280" id="7io-Bj-Xqk"/>
+                                            <constraint firstItem="947-sL-RZG" firstAttribute="centerX" secondItem="0fX-0R-HVA" secondAttribute="centerX" id="CXi-1d-FfG"/>
+                                            <constraint firstItem="a7b-B4-ngW" firstAttribute="leading" secondItem="fM8-w4-Lw5" secondAttribute="leading" id="IBJ-VB-O5N"/>
+                                            <constraint firstItem="a7b-B4-ngW" firstAttribute="trailing" secondItem="fM8-w4-Lw5" secondAttribute="trailing" id="IvQ-Q4-OnS"/>
+                                            <constraint firstItem="d5t-nu-M0e" firstAttribute="leading" secondItem="hyv-1T-gBq" secondAttribute="leading" id="LIO-xu-9M1"/>
+                                            <constraint firstItem="s27-EG-KRF" firstAttribute="trailing" secondItem="vdR-AW-mSY" secondAttribute="trailing" id="MAC-20-wpD"/>
+                                            <constraint firstItem="d5t-nu-M0e" firstAttribute="trailing" secondItem="hyv-1T-gBq" secondAttribute="trailing" id="Npi-CT-qxW"/>
+                                            <constraint firstItem="fM8-w4-Lw5" firstAttribute="bottom" secondItem="QQ7-kd-hme" secondAttribute="bottom" id="Owx-Kz-Bdy"/>
+                                            <constraint firstItem="FK6-hH-Ebw" firstAttribute="leading" secondItem="vdR-AW-mSY" secondAttribute="leading" id="PGk-em-21i"/>
+                                            <constraint firstAttribute="height" constant="150" id="Phv-s9-Gm0"/>
+                                            <constraint firstItem="vdR-AW-mSY" firstAttribute="centerY" secondItem="0fX-0R-HVA" secondAttribute="centerY" id="R7T-dW-0mn"/>
+                                            <constraint firstItem="d5t-nu-M0e" firstAttribute="bottom" secondItem="2X1-eU-Yn6" secondAttribute="bottom" id="Wg7-Id-USo"/>
+                                            <constraint firstItem="FK6-hH-Ebw" firstAttribute="trailing" secondItem="vdR-AW-mSY" secondAttribute="trailing" id="bN4-QL-bmz"/>
+                                            <constraint firstItem="vdR-AW-mSY" firstAttribute="leading" secondItem="0fX-0R-HVA" secondAttribute="leading" id="dEb-oq-Z27"/>
+                                            <constraint firstItem="2X1-eU-Yn6" firstAttribute="trailing" secondItem="hyv-1T-gBq" secondAttribute="trailing" id="dkV-wq-fwJ"/>
+                                            <constraint firstItem="QQ7-kd-hme" firstAttribute="centerX" secondItem="0fX-0R-HVA" secondAttribute="centerX" id="fI6-aT-S09"/>
+                                            <constraint firstItem="QQ7-kd-hme" firstAttribute="centerY" secondItem="0fX-0R-HVA" secondAttribute="centerY" id="fjC-Xf-1LL"/>
+                                            <constraint firstItem="YXF-JV-Pbf" firstAttribute="centerY" secondItem="0fX-0R-HVA" secondAttribute="centerY" id="g7M-xM-9uf"/>
+                                            <constraint firstItem="s27-EG-KRF" firstAttribute="top" secondItem="vdR-AW-mSY" secondAttribute="top" id="hlm-Py-Ybs"/>
+                                            <constraint firstItem="2X1-eU-Yn6" firstAttribute="leading" secondItem="hyv-1T-gBq" secondAttribute="leading" id="k1Z-no-aav"/>
+                                            <constraint firstAttribute="trailing" secondItem="2X1-eU-Yn6" secondAttribute="trailing" id="m8Z-c9-jED"/>
+                                            <constraint firstItem="QQ7-kd-hme" firstAttribute="centerY" secondItem="0fX-0R-HVA" secondAttribute="centerY" id="mFd-wH-K5Y"/>
+                                            <constraint firstItem="BwL-td-x8c" firstAttribute="centerY" secondItem="0fX-0R-HVA" secondAttribute="centerY" id="ptT-Ns-UCB"/>
+                                            <constraint firstItem="FK6-hH-Ebw" firstAttribute="bottom" secondItem="vdR-AW-mSY" secondAttribute="bottom" id="sHq-tm-g7k"/>
+                                            <constraint firstItem="fM8-w4-Lw5" firstAttribute="centerX" secondItem="0fX-0R-HVA" secondAttribute="centerX" id="sJP-HI-hvj"/>
+                                            <constraint firstItem="a7b-B4-ngW" firstAttribute="centerY" secondItem="0fX-0R-HVA" secondAttribute="centerY" id="v1K-Mo-8tz"/>
+                                            <constraint firstItem="s27-EG-KRF" firstAttribute="leading" secondItem="vdR-AW-mSY" secondAttribute="leading" id="xV8-LG-MDQ"/>
+                                            <constraint firstItem="947-sL-RZG" firstAttribute="top" secondItem="QQ7-kd-hme" secondAttribute="top" id="xdk-B0-IYR"/>
+                                            <constraint firstItem="hyv-1T-gBq" firstAttribute="top" secondItem="2X1-eU-Yn6" secondAttribute="top" id="znz-mb-Jan"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYp-94-EqA">
+                                        <rect key="frame" x="45" y="303" width="285" height="55"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8x-Se-Noc">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="Pra-gy-nes"/>
+                                                    <constraint firstAttribute="width" constant="55" id="pia-IC-I9m"/>
+                                                </constraints>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_tuiChu"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_tuiChu_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="RY4-Rg-fGt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AI-kz-zfp">
+                                                <rect key="frame" x="115" y="0.0" width="55" height="55"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="ONn-0f-Kfo"/>
+                                                    <constraint firstAttribute="width" constant="55" id="ies-OH-sNa"/>
+                                                </constraints>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_toNumber"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_toNumber_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="CAc-cM-P6q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-h6-Egx">
+                                                <rect key="frame" x="230" y="0.0" width="55" height="55"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="55" id="H8X-43-roc"/>
+                                                    <constraint firstAttribute="height" constant="55" id="dcF-7H-1Pe"/>
+                                                </constraints>
+                                                <state key="normal" image="GSHInfraredVirtualDeviceTVVC_icon_fanHui"/>
+                                                <state key="highlighted" image="GSHInfraredVirtualDeviceTVVC_icon_fanHui_h"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="S9P-pb-F9f" eventType="touchUpInside" id="ucw-6S-bae"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="285" id="0LY-uz-8hq"/>
+                                            <constraint firstItem="8yX-h6-Egx" firstAttribute="centerY" secondItem="GYp-94-EqA" secondAttribute="centerY" id="LYc-e8-Rz9"/>
+                                            <constraint firstAttribute="height" priority="750" constant="55" id="QcG-jI-0aA"/>
+                                            <constraint firstItem="P8x-Se-Noc" firstAttribute="leading" secondItem="GYp-94-EqA" secondAttribute="leading" id="T8o-Rh-ouC"/>
+                                            <constraint firstAttribute="trailing" secondItem="8yX-h6-Egx" secondAttribute="trailing" id="UMU-we-NK1"/>
+                                            <constraint firstItem="P8x-Se-Noc" firstAttribute="centerY" secondItem="GYp-94-EqA" secondAttribute="centerY" id="Xll-Kc-q76"/>
+                                            <constraint firstItem="7AI-kz-zfp" firstAttribute="centerY" secondItem="GYp-94-EqA" secondAttribute="centerY" id="eLN-0r-u0W"/>
+                                            <constraint firstItem="7AI-kz-zfp" firstAttribute="centerX" secondItem="GYp-94-EqA" secondAttribute="centerX" id="q2o-Qd-VzN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="GYp-94-EqA" firstAttribute="top" secondItem="0fX-0R-HVA" secondAttribute="bottom" constant="40" id="7WP-3h-BO4"/>
+                                    <constraint firstItem="NVH-CJ-OSh" firstAttribute="centerX" secondItem="uk3-N2-sLN" secondAttribute="centerX" id="9G5-i2-3Rs"/>
+                                    <constraint firstItem="0fX-0R-HVA" firstAttribute="centerX" secondItem="uk3-N2-sLN" secondAttribute="centerX" id="oeV-fD-0n3"/>
+                                    <constraint firstItem="GYp-94-EqA" firstAttribute="centerX" secondItem="uk3-N2-sLN" secondAttribute="centerX" id="sEK-8s-Sdv"/>
+                                    <constraint firstItem="NVH-CJ-OSh" firstAttribute="top" secondItem="uk3-N2-sLN" secondAttribute="top" constant="18" id="tZx-YS-8WQ"/>
+                                    <constraint firstItem="0fX-0R-HVA" firstAttribute="top" secondItem="NVH-CJ-OSh" secondAttribute="bottom" constant="40" id="uQd-xM-Y6g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yr8-5a-34U" firstAttribute="centerX" secondItem="oPf-Y0-Zzh" secondAttribute="centerX" id="0L6-AJ-R4V"/>
+                            <constraint firstItem="uk3-N2-sLN" firstAttribute="top" secondItem="oPf-Y0-Zzh" secondAttribute="top" constant="50" id="0fH-m6-8At"/>
+                            <constraint firstAttribute="trailing" secondItem="vHh-fR-O9I" secondAttribute="trailing" id="BrC-Gz-n6h"/>
+                            <constraint firstAttribute="trailing" secondItem="YTn-nr-sCG" secondAttribute="trailing" constant="16" id="Nau-SQ-u8q"/>
+                            <constraint firstItem="uk3-N2-sLN" firstAttribute="leading" secondItem="oPf-Y0-Zzh" secondAttribute="leading" id="UdS-g2-2PR"/>
+                            <constraint firstAttribute="bottom" secondItem="uk3-N2-sLN" secondAttribute="bottom" id="Xr2-HC-RoQ"/>
+                            <constraint firstItem="vHh-fR-O9I" firstAttribute="leading" secondItem="oPf-Y0-Zzh" secondAttribute="leading" id="cPg-gd-e5Q"/>
+                            <constraint firstAttribute="bottom" secondItem="vHh-fR-O9I" secondAttribute="bottom" id="cap-vS-4T9"/>
+                            <constraint firstItem="vHh-fR-O9I" firstAttribute="top" secondItem="oPf-Y0-Zzh" secondAttribute="top" constant="50" id="f47-f2-teI"/>
+                            <constraint firstAttribute="trailing" secondItem="uk3-N2-sLN" secondAttribute="trailing" id="j8P-3Q-QHs"/>
+                            <constraint firstItem="yr8-5a-34U" firstAttribute="top" secondItem="oPf-Y0-Zzh" secondAttribute="top" constant="5" id="jC0-8T-4bR"/>
+                            <constraint firstItem="YTn-nr-sCG" firstAttribute="top" secondItem="oPf-Y0-Zzh" secondAttribute="top" id="jOk-jF-RgJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnHomePage" destination="P8x-Se-Noc" id="cuD-Fx-Dft"/>
+                        <outlet property="btnRightNavBtn" destination="YTn-nr-sCG" id="2a6-cX-Xa1"/>
+                        <outlet property="btnTVOff" destination="gM3-hg-X4k" id="sZD-TQ-ue4"/>
+                        <outlet property="lblTitle" destination="yr8-5a-34U" id="LG5-Vb-lF8"/>
+                        <outlet property="viewHome" destination="uk3-N2-sLN" id="jYL-C9-bka"/>
+                        <outlet property="viewNumber" destination="vHh-fR-O9I" id="ocF-uB-1Ym"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="odj-Wv-UIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="158.77061469265368"/>
+        </scene>
+        <!--Infrared Virtual Device Air ConditionerVC-->
+        <scene sceneID="sIW-SJ-EbM">
+            <objects>
+                <viewController storyboardIdentifier="GSHInfraredVirtualDeviceAirConditionerVC" hidesBottomBarWhenPushed="YES" id="8Qd-nX-1CV" customClass="GSHInfraredVirtualDeviceAirConditionerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N0R-Ki-4zA"/>
+                        <viewControllerLayoutGuide type="bottom" id="OUJ-Ea-TRm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sMD-3W-fXH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HV-5S-aI4" customClass="TZMButton">
+                                <rect key="frame" x="16" y="0.0" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="Tgv-Nr-fiE"/>
+                                    <constraint firstAttribute="height" constant="34" id="m5L-SG-Dfe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" image="device_switch_close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="device_switch_open"/>
+                                <connections>
+                                    <action selector="touchBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="6BQ-Pq-wcg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空调" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qm3-t5-c13">
+                                <rect key="frame" x="97.5" y="6" width="180" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Kck-Dt-VFY"/>
+                                    <constraint firstAttribute="height" constant="24" id="ipv-H0-XDd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="z_titleColor" value="#222222"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKn-8h-C0c">
+                                <rect key="frame" x="325" y="0.0" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="U8y-fd-7Bp"/>
+                                    <constraint firstAttribute="height" constant="34" id="h7u-D2-KW3"/>
+                                </constraints>
+                                <state key="normal" image="device_set_btn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchRigthNavBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="S8i-QG-ynK"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTa-ra-bFO">
+                                <rect key="frame" x="0.0" y="45" width="375" height="205"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tg3-bw-Z70">
+                                        <rect key="frame" x="87.5" y="17.5" width="200" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送风" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxV-Hc-aOa">
+                                                <rect key="frame" x="50" y="50" width="100.5" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="HrS-Ey-zoo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_titleColor" value="#222222"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="˚C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVH-YN-zwM">
+                                                <rect key="frame" x="154.5" y="85.5" width="19" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_titleColor" value="#222222"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxW-Zy-RGd">
+                                                <rect key="frame" x="82.5" y="121" width="35.5" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="67O-Jf-zw6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_titleColor" value="#999999"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbb-IQ-IcQ">
+                                                <rect key="frame" x="82.5" y="149" width="35.5" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="goG-T3-NtL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_titleColor" value="#999999"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="VVH-YN-zwM" firstAttribute="leading" secondItem="YxV-Hc-aOa" secondAttribute="trailing" constant="4" id="7GB-W3-ONz"/>
+                                            <constraint firstItem="YxV-Hc-aOa" firstAttribute="centerX" secondItem="Tg3-bw-Z70" secondAttribute="centerX" id="CDj-9f-HJT"/>
+                                            <constraint firstItem="VVH-YN-zwM" firstAttribute="firstBaseline" secondItem="YxV-Hc-aOa" secondAttribute="firstBaseline" constant="3" id="Jzt-Ko-EN7"/>
+                                            <constraint firstItem="nxW-Zy-RGd" firstAttribute="top" secondItem="YxV-Hc-aOa" secondAttribute="bottom" constant="1" id="PCV-ZW-AsW"/>
+                                            <constraint firstItem="YxV-Hc-aOa" firstAttribute="centerY" secondItem="Tg3-bw-Z70" secondAttribute="centerY" constant="-15" id="Qcq-cU-jrz"/>
+                                            <constraint firstItem="Bbb-IQ-IcQ" firstAttribute="top" secondItem="nxW-Zy-RGd" secondAttribute="bottom" constant="8" id="TwA-Pa-eBe"/>
+                                            <constraint firstAttribute="height" constant="200" id="ZkT-x7-qM0"/>
+                                            <constraint firstItem="Bbb-IQ-IcQ" firstAttribute="centerX" secondItem="Tg3-bw-Z70" secondAttribute="centerX" id="d9G-sH-7LC"/>
+                                            <constraint firstAttribute="width" constant="200" id="iKx-tV-9fI"/>
+                                            <constraint firstItem="nxW-Zy-RGd" firstAttribute="centerX" secondItem="Tg3-bw-Z70" secondAttribute="centerX" id="kUs-x6-6pA"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hm-Mx-SEO">
+                                        <rect key="frame" x="290.5" y="85.5" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="1du-6Z-EYq"/>
+                                            <constraint firstAttribute="height" constant="64" id="c8P-0q-jCs"/>
+                                        </constraints>
+                                        <state key="normal" image="conditioningcontrol_icon_add_gray"/>
+                                        <connections>
+                                            <action selector="touchBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="9aR-Ja-Sdg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWP-Uh-Ou5">
+                                        <rect key="frame" x="20.5" y="85.5" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="Oh7-dG-oxy"/>
+                                            <constraint firstAttribute="width" constant="64" id="Ty0-e0-Ww3"/>
+                                        </constraints>
+                                        <state key="normal" image="conditioningcontrol_icon_subtraction_gray"/>
+                                        <connections>
+                                            <action selector="touchBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="mTg-an-NbP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9hm-Mx-SEO" firstAttribute="leading" secondItem="Tg3-bw-Z70" secondAttribute="trailing" constant="3" id="DoR-Ar-aXp"/>
+                                    <constraint firstItem="9hm-Mx-SEO" firstAttribute="centerY" secondItem="bWP-Uh-Ou5" secondAttribute="centerY" id="IXE-tt-cUU"/>
+                                    <constraint firstItem="Tg3-bw-Z70" firstAttribute="leading" secondItem="bWP-Uh-Ou5" secondAttribute="trailing" constant="3" id="aow-OM-fPY"/>
+                                    <constraint firstItem="Tg3-bw-Z70" firstAttribute="centerY" secondItem="VTa-ra-bFO" secondAttribute="centerY" constant="15" id="bUO-43-jxX"/>
+                                    <constraint firstItem="Tg3-bw-Z70" firstAttribute="centerX" secondItem="VTa-ra-bFO" secondAttribute="centerX" id="c3K-Px-K35"/>
+                                    <constraint firstAttribute="height" constant="205" id="n9z-Ly-o1N"/>
+                                    <constraint firstItem="Tg3-bw-Z70" firstAttribute="centerY" secondItem="bWP-Uh-Ou5" secondAttribute="centerY" id="pct-n7-AbM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytO-ix-nuq">
+                                <rect key="frame" x="0.0" y="485" width="375" height="182"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mzi-EM-qeU">
+                                        <rect key="frame" x="15" y="21" width="345" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdO-Tw-TuF" customClass="TZMButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="750" constant="60" id="cUD-oX-X5Z"/>
+                                                    <constraint firstAttribute="width" priority="750" constant="60" id="ndc-la-CZa"/>
+                                                </constraints>
+                                                <state key="normal" image="conditioner_xeransis_icon_close"/>
+                                                <state key="selected" image="conditioner_xeransis_icon_sel"/>
+                                                <state key="highlighted" image="conditioner_xeransis_icon_sel"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="c6L-rL-ViW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPf-uL-LaO" customClass="TZMButton">
+                                                <rect key="frame" x="86.5" y="0.0" width="86" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" priority="750" constant="60" id="21M-f4-5ui"/>
+                                                    <constraint firstAttribute="height" priority="750" constant="60" id="6pa-Vh-du4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" image="conditioner_heating_icon_close"/>
+                                                <state key="selected" image="conditioner_heating_icon_sel"/>
+                                                <state key="highlighted" image="conditioner_heating_icon_sel"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="JMn-NK-752"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsZ-z3-FIP" customClass="TZMButton">
+                                                <rect key="frame" x="172.5" y="0.0" width="86.5" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" priority="750" constant="60" id="4E0-Ed-WFZ"/>
+                                                    <constraint firstAttribute="height" priority="750" constant="60" id="lm9-QC-rL3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" image="conditioner_auto_icon_close"/>
+                                                <state key="selected" image="conditioner_auto_icon_sel"/>
+                                                <state key="highlighted" image="conditioner_auto_icon_sel"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="A7f-SK-X2a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpE-TP-hJC" customClass="TZMButton">
+                                                <rect key="frame" x="259" y="0.0" width="86" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="750" constant="60" id="d1U-UC-AVo"/>
+                                                    <constraint firstAttribute="width" priority="750" constant="60" id="r1V-eD-DS4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" image="conditioner_refrigeration_icon_close"/>
+                                                <state key="selected" image="conditioner_refrigeration_icon_sel"/>
+                                                <state key="highlighted" image="conditioner_refrigeration_icon_sel"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="dR7-Yi-pq1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="e2Q-yU-jX0"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JiK-zi-CeE">
+                                        <rect key="frame" x="58" y="98" width="259" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8M-hb-dj0" customClass="TZMButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="750" constant="60" id="DxH-il-P1D"/>
+                                                    <constraint firstAttribute="width" priority="750" constant="60" id="vdl-zD-iKD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" image="conditioner_low_icon_close"/>
+                                                <state key="selected" image="conditioner_middle_icon_sel"/>
+                                                <state key="highlighted" image="conditioner_low_icon_sel"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="MeO-sJ-cP4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGP-Sr-h4G" customClass="TZMButton">
+                                                <rect key="frame" x="86.5" y="0.0" width="86" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="750" constant="60" id="5oA-wk-FyF"/>
+                                                    <constraint firstAttribute="width" priority="750" constant="60" id="uEf-g5-C3O"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" image="conditioner_middle_icon_close"/>
+                                                <state key="selected" image="conditioner_low_icon_sel"/>
+                                                <state key="highlighted" image="conditioner_middle_icon_sel"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="tgZ-UZ-qc5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29b-Wu-1GX" customClass="TZMButton">
+                                                <rect key="frame" x="172.5" y="0.0" width="86.5" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" priority="750" constant="60" id="MSg-hg-CT2"/>
+                                                    <constraint firstAttribute="height" priority="750" constant="60" id="tJK-JX-BRc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" image="conditioner_high_icon_close"/>
+                                                <state key="selected" image="conditioner_high_icon_sel"/>
+                                                <state key="highlighted" image="conditioner_high_icon_sel"/>
+                                                <connections>
+                                                    <action selector="touchBut:" destination="8Qd-nX-1CV" eventType="touchUpInside" id="uIz-8b-o57"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="9sk-L4-Eug"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="JiK-zi-CeE" firstAttribute="width" secondItem="mzi-EM-qeU" secondAttribute="width" multiplier="3/4" id="2Fz-c8-sAn"/>
+                                    <constraint firstAttribute="trailing" secondItem="mzi-EM-qeU" secondAttribute="trailing" constant="15" id="5iX-de-XDz"/>
+                                    <constraint firstItem="mzi-EM-qeU" firstAttribute="leading" secondItem="ytO-ix-nuq" secondAttribute="leading" constant="15" id="EUV-bm-hlk"/>
+                                    <constraint firstAttribute="bottom" secondItem="JiK-zi-CeE" secondAttribute="bottom" constant="19" id="Qfv-Db-qo9"/>
+                                    <constraint firstAttribute="height" constant="182" id="WrP-28-Bem"/>
+                                    <constraint firstItem="JiK-zi-CeE" firstAttribute="top" secondItem="mzi-EM-qeU" secondAttribute="bottom" constant="12" id="ZO5-wR-3FR"/>
+                                    <constraint firstItem="JiK-zi-CeE" firstAttribute="centerX" secondItem="ytO-ix-nuq" secondAttribute="centerX" id="guf-xX-e4k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8HV-5S-aI4" firstAttribute="top" secondItem="sMD-3W-fXH" secondAttribute="top" id="8VB-8J-xgh"/>
+                            <constraint firstAttribute="trailing" secondItem="ytO-ix-nuq" secondAttribute="trailing" id="DPM-O2-ral"/>
+                            <constraint firstItem="Qm3-t5-c13" firstAttribute="centerX" secondItem="sMD-3W-fXH" secondAttribute="centerX" id="DSG-N5-axX"/>
+                            <constraint firstAttribute="trailing" secondItem="tKn-8h-C0c" secondAttribute="trailing" constant="16" id="E7X-rL-BFI"/>
+                            <constraint firstItem="VTa-ra-bFO" firstAttribute="top" secondItem="sMD-3W-fXH" secondAttribute="top" constant="45" id="Lzw-HJ-OW6"/>
+                            <constraint firstItem="VTa-ra-bFO" firstAttribute="leading" secondItem="sMD-3W-fXH" secondAttribute="leading" id="TBl-s0-gLA"/>
+                            <constraint firstAttribute="trailing" secondItem="VTa-ra-bFO" secondAttribute="trailing" id="YsA-o5-yOI"/>
+                            <constraint firstItem="ytO-ix-nuq" firstAttribute="leading" secondItem="sMD-3W-fXH" secondAttribute="leading" id="bbt-Qd-Xjk"/>
+                            <constraint firstAttribute="bottom" secondItem="ytO-ix-nuq" secondAttribute="bottom" id="n0A-mF-E6U"/>
+                            <constraint firstItem="tKn-8h-C0c" firstAttribute="top" secondItem="sMD-3W-fXH" secondAttribute="top" id="o08-Xl-bG2"/>
+                            <constraint firstItem="8HV-5S-aI4" firstAttribute="leading" secondItem="sMD-3W-fXH" secondAttribute="leading" constant="16" id="tgN-Pe-87n"/>
+                            <constraint firstItem="Qm3-t5-c13" firstAttribute="top" secondItem="sMD-3W-fXH" secondAttribute="top" constant="6" id="yZ2-2A-kJ4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnChuShi" destination="CdO-Tw-TuF" id="G5L-84-7Jd"/>
+                        <outlet property="btnDi" destination="U8M-hb-dj0" id="vQD-MX-WHx"/>
+                        <outlet property="btnGao" destination="29b-Wu-1GX" id="uZI-gT-AXC"/>
+                        <outlet property="btnJia" destination="9hm-Mx-SEO" id="FZ7-sO-gz3"/>
+                        <outlet property="btnJian" destination="bWP-Uh-Ou5" id="fXK-hX-Bdu"/>
+                        <outlet property="btnKaiGuan" destination="8HV-5S-aI4" id="1Nz-yw-NCR"/>
+                        <outlet property="btnLeng" destination="ZpE-TP-hJC" id="typ-fY-XWo"/>
+                        <outlet property="btnRe" destination="kPf-uL-LaO" id="4DP-TY-ltf"/>
+                        <outlet property="btnRightNavBtn" destination="tKn-8h-C0c" id="Ug0-5m-wkN"/>
+                        <outlet property="btnSongFeng" destination="xsZ-z3-FIP" id="grN-8t-68u"/>
+                        <outlet property="btnZhong" destination="uGP-Sr-h4G" id="k1a-JV-tC0"/>
+                        <outlet property="lblDanwei" destination="VVH-YN-zwM" id="RC4-LM-6cC"/>
+                        <outlet property="lblFeng" destination="Bbb-IQ-IcQ" id="aQ3-yE-AMc"/>
+                        <outlet property="lblModel" destination="nxW-Zy-RGd" id="UK2-HI-avA"/>
+                        <outlet property="lblTitle" destination="Qm3-t5-c13" id="ETf-dw-Jjv"/>
+                        <outlet property="lblWenDu" destination="YxV-Hc-aOa" id="Mkc-wW-TJm"/>
+                        <outlet property="temperatureView" destination="Tg3-bw-Z70" id="qA5-J5-r8d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TxR-bh-BB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.60000000000002" y="159.60591133004928"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_caiDan" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_caiDan_h" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_fanHui" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_fanHui_h" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_jingYin" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_jingYin_h" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_off" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_off_h" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_ok" width="44" height="44"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_ok_h" width="44" height="44"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_pinDaoJia" width="50" height="64.5"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_pinDaoJia_h" width="50" height="64.5"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_pinDaoJian" width="50" height="64.5"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_pinDaoJian_h" width="50" height="64.5"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_pinDao_bg" width="50" height="150"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shang" width="50" height="50"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shang_h" width="50" height="50"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi-0" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi-1" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi-2" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi-3" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi-4" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi-5" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi-6" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi-7" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi-8" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi-9" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-0" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-1" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-2" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-3" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-4" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-5" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-6" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-7" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-8" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_shuzi_h-9" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_toHome" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_toHome_h" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_toNumber" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_toNumber_h" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_tuiChu" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_tuiChu_h" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_tvOff" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_tvOff_h" width="55" height="55"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_xia" width="50" height="50"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_xia_h" width="50" height="50"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_yinLiangJia" width="50" height="64.5"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_yinLiangJia_h" width="50" height="64.5"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_yinLiangJian" width="50" height="64.5"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_yinLiangJian_h" width="50" height="64.5"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_yinLiang_bg" width="50" height="150"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_you" width="50" height="50"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_you_h" width="50" height="50"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_yuan_bg" width="150" height="150"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_zuo" width="50" height="50"/>
+        <image name="GSHInfraredVirtualDeviceTVVC_icon_zuo_h" width="50" height="50"/>
+        <image name="conditioner_auto_icon_close" width="55" height="55"/>
+        <image name="conditioner_auto_icon_sel" width="55" height="55"/>
+        <image name="conditioner_heating_icon_close" width="55.5" height="55"/>
+        <image name="conditioner_heating_icon_sel" width="55.5" height="55.5"/>
+        <image name="conditioner_high_icon_close" width="55" height="55"/>
+        <image name="conditioner_high_icon_sel" width="55" height="55"/>
+        <image name="conditioner_low_icon_close" width="55" height="55"/>
+        <image name="conditioner_low_icon_sel" width="55" height="55"/>
+        <image name="conditioner_middle_icon_close" width="55" height="55"/>
+        <image name="conditioner_middle_icon_sel" width="55" height="55"/>
+        <image name="conditioner_refrigeration_icon_close" width="55" height="55"/>
+        <image name="conditioner_refrigeration_icon_sel" width="55" height="55"/>
+        <image name="conditioner_xeransis_icon_close" width="55" height="55"/>
+        <image name="conditioner_xeransis_icon_sel" width="55" height="55"/>
+        <image name="conditioningcontrol_icon_add_gray" width="24" height="24"/>
+        <image name="conditioningcontrol_icon_subtraction_gray" width="24" height="24"/>
+        <image name="device_set_btn" width="26" height="26"/>
+        <image name="device_switch_close" width="26" height="26"/>
+        <image name="device_switch_open" width="24" height="23.5"/>
+    </resources>
+</document>

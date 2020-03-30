@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GSHAddSceneCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入场景名称" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JvC-4e-h1W">
+                        <rect key="frame" x="125" y="15" width="180" height="20"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IxE-sl-wJM" userLabel="lineView">
+                        <rect key="frame" x="15" y="49" width="305" height="0.5"/>
+                        <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="52j-NZ-x7y"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_icon_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="60U-fc-bvq">
+                        <rect key="frame" x="293" y="17.5" width="12" height="15"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PLy-RT-aab">
+                        <rect key="frame" x="224" y="10" width="59" height="29.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="PLy-RT-aab" secondAttribute="height" multiplier="2" id="sO0-zA-tOC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="场景名称哈哈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPZ-VA-enJ">
+                        <rect key="frame" x="15" y="15" width="100" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="YVO-5N-tVa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhF-8y-JsT">
+                        <rect key="frame" x="283" y="25" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="IxE-sl-wJM" secondAttribute="trailing" id="4D1-QP-skQ"/>
+                    <constraint firstAttribute="trailing" secondItem="60U-fc-bvq" secondAttribute="trailing" constant="15" id="5Uz-pd-J6X"/>
+                    <constraint firstItem="HPZ-VA-enJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="9a4-0r-h2v"/>
+                    <constraint firstItem="JvC-4e-h1W" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MvQ-Bb-gzL"/>
+                    <constraint firstAttribute="trailing" secondItem="JvC-4e-h1W" secondAttribute="trailing" constant="15" id="Pt3-i8-Yg9"/>
+                    <constraint firstItem="60U-fc-bvq" firstAttribute="leading" secondItem="PLy-RT-aab" secondAttribute="trailing" constant="10" id="QAo-7a-Sun"/>
+                    <constraint firstItem="IxE-sl-wJM" firstAttribute="leading" secondItem="HPZ-VA-enJ" secondAttribute="leading" id="Srj-SA-uJ8"/>
+                    <constraint firstAttribute="bottom" secondItem="PLy-RT-aab" secondAttribute="bottom" constant="10" id="YJk-bv-Ohc"/>
+                    <constraint firstItem="60U-fc-bvq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="egm-i4-Wai"/>
+                    <constraint firstItem="HPZ-VA-enJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jlP-BE-1AK"/>
+                    <constraint firstItem="PLy-RT-aab" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kJk-Wa-wvo"/>
+                    <constraint firstItem="JvC-4e-h1W" firstAttribute="leading" secondItem="HPZ-VA-enJ" secondAttribute="trailing" constant="10" id="pMl-cw-Bfs"/>
+                    <constraint firstItem="60U-fc-bvq" firstAttribute="leading" secondItem="yhF-8y-JsT" secondAttribute="trailing" constant="10" id="vZY-pZ-Nue"/>
+                    <constraint firstAttribute="bottom" secondItem="IxE-sl-wJM" secondAttribute="bottom" id="w9R-Bw-UX5"/>
+                    <constraint firstItem="yhF-8y-JsT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xb4-L0-Tkq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImageView" destination="60U-fc-bvq" id="M4h-bn-loK"/>
+                <outlet property="detailLabel" destination="yhF-8y-JsT" id="dk3-Pr-50r"/>
+                <outlet property="inputTextField" destination="JvC-4e-h1W" id="XNe-yb-ZbX"/>
+                <outlet property="inputTextFieldTrailing" destination="Pt3-i8-Yg9" id="KOh-xW-7Jj"/>
+                <outlet property="itemNameLabel" destination="HPZ-VA-enJ" id="F4R-WA-2SU"/>
+                <outlet property="sceneBackImageView" destination="PLy-RT-aab" id="xOX-hk-Fwp"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="list_icon_arrow_right" width="12" height="15"/>
+    </resources>
+</document>

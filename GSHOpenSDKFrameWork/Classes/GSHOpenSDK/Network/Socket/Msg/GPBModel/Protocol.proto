@@ -1,0 +1,29 @@
+syntax = "proto3";
+option java_package = "gbap.server.im.proto.model";
+option java_outer_classname = "ProtocolBuf";
+
+message ProtocolNodeAttribute{
+	string Name = 1;
+	string Value = 2;
+}
+
+message ProtocolNodeMap{
+	string Name = 1;
+	repeated ProtocolNode Node = 2;
+}
+
+message ProtocolNode{
+	bool IsCData = 1;
+	string Name = 2;
+	string Value = 3;
+	repeated ProtocolNodeAttribute Attr = 4;
+	repeated ProtocolNodeMap Node = 5;
+}
+
+message Protocol {
+	int32 ID = 1; 
+	int32 SN = 2; 
+	string GwID = 3;
+	int32 ErrCode = 4; 
+	repeated ProtocolNodeMap Node = 5;
+}

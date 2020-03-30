@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Air Conditioner SetVC-->
+        <scene sceneID="Hss-qV-QnJ">
+            <objects>
+                <viewController storyboardIdentifier="GSHAirConditionerSetVC" id="5V5-Tm-glg" customClass="GSHAirConditionerSetVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="93P-zU-Nh8"/>
+                        <viewControllerLayoutGuide type="bottom" id="gFc-5c-gKR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VIh-0d-KuL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zul-Qg-lPi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9C-UV-aL9">
+                                        <rect key="frame" x="20" y="0.0" width="60" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="LgV-8D-z7d"/>
+                                        </constraints>
+                                        <state key="normal" image="device_switch_open"/>
+                                        <state key="selected" image="device_switch_close"/>
+                                        <connections>
+                                            <action selector="switchButtonClick:" destination="5V5-Tm-glg" eventType="touchUpInside" id="aoy-Nd-Hx9"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空调" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWe-nO-M4M">
+                                        <rect key="frame" x="97.5" y="0.0" width="180" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="dt0-Hb-mz6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egM-3Y-fvI">
+                                        <rect key="frame" x="295" y="0.0" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="xtg-Cx-rLu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="确定">
+                                            <color key="titleColor" red="0.1803921568627451" green="0.69019607843137254" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sureButtonClick:" destination="5V5-Tm-glg" eventType="touchUpInside" id="YCn-JT-tVp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uWe-nO-M4M" firstAttribute="top" secondItem="zul-Qg-lPi" secondAttribute="top" id="Boe-0U-3Sj"/>
+                                    <constraint firstAttribute="trailing" secondItem="egM-3Y-fvI" secondAttribute="trailing" constant="20" id="F7c-xn-BvB"/>
+                                    <constraint firstAttribute="height" constant="30" id="KTy-Hj-7pG"/>
+                                    <constraint firstItem="v9C-UV-aL9" firstAttribute="top" secondItem="zul-Qg-lPi" secondAttribute="top" id="m7h-SP-b4j"/>
+                                    <constraint firstItem="v9C-UV-aL9" firstAttribute="leading" secondItem="zul-Qg-lPi" secondAttribute="leading" constant="20" id="o9X-nb-kgh"/>
+                                    <constraint firstItem="egM-3Y-fvI" firstAttribute="top" secondItem="zul-Qg-lPi" secondAttribute="top" id="wcb-DI-Yq7"/>
+                                    <constraint firstAttribute="bottom" secondItem="egM-3Y-fvI" secondAttribute="bottom" id="wdw-jc-TVA"/>
+                                    <constraint firstItem="uWe-nO-M4M" firstAttribute="centerX" secondItem="zul-Qg-lPi" secondAttribute="centerX" id="weP-20-AH2"/>
+                                    <constraint firstAttribute="bottom" secondItem="uWe-nO-M4M" secondAttribute="bottom" id="wjb-Z0-XiG"/>
+                                </constraints>
+                            </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X0k-XO-XWz">
+                                <rect key="frame" x="140" y="243" width="60" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="40q-GH-oqj"/>
+                                    <constraint firstAttribute="width" constant="60" id="HQu-Ta-rBO"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置模式" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFW-j7-IkH">
+                                <rect key="frame" x="20" y="54" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.2627450980392157" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDo-md-1Xg">
+                                <rect key="frame" x="15" y="86" width="345" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3r-11-gKM" userLabel="View1">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g85-zq-SPh" customClass="TZMButton">
+                                                <rect key="frame" x="13" y="0.0" width="60" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="7rr-DQ-Ptb"/>
+                                                    <constraint firstAttribute="height" constant="80" id="kkx-WX-vWA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="6"/>
+                                                <state key="normal" image="conditioner_refrigeration_icon_close">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" image="conditioner_refrigeration_icon_sel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#FFFFFF88"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#FFFFFF"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageDirection">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleButtonClick:" destination="5V5-Tm-glg" eventType="touchUpInside" id="Y5M-hb-d1w"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="g85-zq-SPh" firstAttribute="centerY" secondItem="r3r-11-gKM" secondAttribute="centerY" id="4Ws-fi-XVn"/>
+                                            <constraint firstItem="g85-zq-SPh" firstAttribute="centerX" secondItem="r3r-11-gKM" secondAttribute="centerX" id="Lvn-15-Sbd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gf-M1-ogZ" userLabel="View2">
+                                        <rect key="frame" x="86.5" y="0.0" width="86" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMc-yu-oTO" customClass="TZMButton">
+                                                <rect key="frame" x="13" y="0.0" width="60" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="JIM-C3-Amh"/>
+                                                    <constraint firstAttribute="width" constant="60" id="Wh9-Th-ydi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="6"/>
+                                                <state key="normal" title="制热模式" image="conditioner_heating_icon_close">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" image="conditioner_heating_icon_sel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#FFFFFF88"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#FFFFFF"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageDirection">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleButtonClick:" destination="5V5-Tm-glg" eventType="touchUpInside" id="dpE-z3-FnH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="gMc-yu-oTO" firstAttribute="centerY" secondItem="6gf-M1-ogZ" secondAttribute="centerY" id="YvE-eu-hQi"/>
+                                            <constraint firstItem="gMc-yu-oTO" firstAttribute="centerX" secondItem="6gf-M1-ogZ" secondAttribute="centerX" id="xAF-Ue-S8q"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8D-uh-8yI" userLabel="View3">
+                                        <rect key="frame" x="172.5" y="0.0" width="86.5" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sp-7m-Woq" customClass="TZMButton">
+                                                <rect key="frame" x="13" y="0.0" width="60" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="IYS-Be-qJc"/>
+                                                    <constraint firstAttribute="width" constant="60" id="boN-vM-IEg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="6"/>
+                                                <state key="normal" title="除湿模式" image="conditioner_xeransis_icon_close">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" image="conditioner_xeransis_icon_sel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#FFFFFF88"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#FFFFFF"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageDirection">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleButtonClick:" destination="5V5-Tm-glg" eventType="touchUpInside" id="tUG-kb-8eg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="7Sp-7m-Woq" firstAttribute="centerX" secondItem="V8D-uh-8yI" secondAttribute="centerX" id="OCg-VL-hGv"/>
+                                            <constraint firstItem="7Sp-7m-Woq" firstAttribute="centerY" secondItem="V8D-uh-8yI" secondAttribute="centerY" id="QSl-dN-Qgu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7D-FX-H0Z" userLabel="View4">
+                                        <rect key="frame" x="259" y="0.0" width="86" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ux-ka-0kp" customClass="TZMButton">
+                                                <rect key="frame" x="13" y="0.0" width="60" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="e0W-tA-sBm"/>
+                                                    <constraint firstAttribute="width" constant="60" id="lCK-Md-OqV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="6"/>
+                                                <state key="normal" title="送风模式" image="conditioner_auto_icon_close">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" image="conditioner_auto_icon_sel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_normalStateTitleColor" value="#FFFFFF88"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="z_selectedStateTitleColor" value="#FFFFFF"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageDirection">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleButtonClick:" destination="5V5-Tm-glg" eventType="touchUpInside" id="hQb-bq-qnM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="8ux-ka-0kp" firstAttribute="centerY" secondItem="H7D-FX-H0Z" secondAttribute="centerY" id="NAi-H4-n54"/>
+                                            <constraint firstItem="8ux-ka-0kp" firstAttribute="centerX" secondItem="H7D-FX-H0Z" secondAttribute="centerX" id="fxg-TS-V6I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6gf-M1-ogZ" firstAttribute="top" secondItem="oDo-md-1Xg" secondAttribute="top" id="13I-4L-xV4"/>
+                                    <constraint firstItem="r3r-11-gKM" firstAttribute="leading" secondItem="oDo-md-1Xg" secondAttribute="leading" id="48Y-HW-Jqd"/>
+                                    <constraint firstAttribute="bottom" secondItem="r3r-11-gKM" secondAttribute="bottom" id="DaL-WJ-1DF"/>
+                                    <constraint firstItem="V8D-uh-8yI" firstAttribute="width" secondItem="r3r-11-gKM" secondAttribute="width" id="HYy-ba-zqf"/>
+                                    <constraint firstAttribute="trailing" secondItem="H7D-FX-H0Z" secondAttribute="trailing" id="PLs-Fc-tN5"/>
+                                    <constraint firstItem="H7D-FX-H0Z" firstAttribute="top" secondItem="oDo-md-1Xg" secondAttribute="top" id="QAc-se-uTx"/>
+                                    <constraint firstAttribute="height" constant="80" id="ZgK-Hp-yeF"/>
+                                    <constraint firstItem="6gf-M1-ogZ" firstAttribute="leading" secondItem="r3r-11-gKM" secondAttribute="trailing" id="cj6-rd-c1K"/>
+                                    <constraint firstAttribute="bottom" secondItem="H7D-FX-H0Z" secondAttribute="bottom" id="fNJ-km-W8z"/>
+                                    <constraint firstItem="H7D-FX-H0Z" firstAttribute="leading" secondItem="V8D-uh-8yI" secondAttribute="trailing" id="g3b-Lc-pew"/>
+                                    <constraint firstAttribute="bottom" secondItem="V8D-uh-8yI" secondAttribute="bottom" id="hMR-2S-eBG"/>
+                                    <constraint firstItem="V8D-uh-8yI" firstAttribute="leading" secondItem="6gf-M1-ogZ" secondAttribute="trailing" id="iCK-8k-Li2"/>
+                                    <constraint firstAttribute="bottom" secondItem="6gf-M1-ogZ" secondAttribute="bottom" id="mNt-az-gDa"/>
+                                    <constraint firstItem="V8D-uh-8yI" firstAttribute="top" secondItem="oDo-md-1Xg" secondAttribute="top" id="mS1-Rv-G6v"/>
+                                    <constraint firstItem="6gf-M1-ogZ" firstAttribute="width" secondItem="r3r-11-gKM" secondAttribute="width" id="uHR-gF-bNv"/>
+                                    <constraint firstItem="H7D-FX-H0Z" firstAttribute="width" secondItem="r3r-11-gKM" secondAttribute="width" id="uOu-1o-XGj"/>
+                                    <constraint firstItem="r3r-11-gKM" firstAttribute="top" secondItem="oDo-md-1Xg" secondAttribute="top" id="x8z-9F-KB6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置触发阀值" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DR-S5-Iw3">
+                                <rect key="frame" x="20" y="206" width="86" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.2627450980392157" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CgJ-jK-y9L">
+                                <rect key="frame" x="306" y="199" width="51" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="onTintColor" red="0.1803921568627451" green="0.69019607843137254" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="triggerSwitchTouch:" destination="5V5-Tm-glg" eventType="valueChanged" id="BO6-d6-s4o"/>
+                                </connections>
+                            </switch>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxZ-os-i5a">
+                                <rect key="frame" x="20" y="243" width="60" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="NrH-ca-Q8v"/>
+                                    <constraint firstAttribute="height" constant="100" id="VsV-WC-i1e"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5DR-S5-Iw3" firstAttribute="top" secondItem="oDo-md-1Xg" secondAttribute="bottom" constant="40" id="04F-GW-gWk"/>
+                            <constraint firstItem="X0k-XO-XWz" firstAttribute="top" secondItem="RxZ-os-i5a" secondAttribute="top" id="5hr-Om-43k"/>
+                            <constraint firstItem="X0k-XO-XWz" firstAttribute="leading" secondItem="RxZ-os-i5a" secondAttribute="trailing" constant="60" id="5od-Q7-oaD"/>
+                            <constraint firstItem="zul-Qg-lPi" firstAttribute="leading" secondItem="VIh-0d-KuL" secondAttribute="leading" id="E7c-sD-RNj"/>
+                            <constraint firstItem="oDo-md-1Xg" firstAttribute="leading" secondItem="VIh-0d-KuL" secondAttribute="leading" constant="15" id="HEn-hc-2JZ"/>
+                            <constraint firstAttribute="trailing" secondItem="oDo-md-1Xg" secondAttribute="trailing" constant="15" id="HTM-d1-Io3"/>
+                            <constraint firstItem="zul-Qg-lPi" firstAttribute="top" secondItem="93P-zU-Nh8" secondAttribute="bottom" id="aag-dO-dPO"/>
+                            <constraint firstItem="RxZ-os-i5a" firstAttribute="leading" secondItem="VIh-0d-KuL" secondAttribute="leading" constant="20" id="aqO-mQ-NhF"/>
+                            <constraint firstItem="5DR-S5-Iw3" firstAttribute="leading" secondItem="VIh-0d-KuL" secondAttribute="leading" constant="20" id="cI5-1E-FrU"/>
+                            <constraint firstItem="rFW-j7-IkH" firstAttribute="leading" secondItem="VIh-0d-KuL" secondAttribute="leading" constant="20" id="d1v-OK-NY4"/>
+                            <constraint firstAttribute="trailing" secondItem="CgJ-jK-y9L" secondAttribute="trailing" constant="20" id="fH0-ke-wMp"/>
+                            <constraint firstAttribute="trailing" secondItem="zul-Qg-lPi" secondAttribute="trailing" id="fyt-oa-Vlf"/>
+                            <constraint firstItem="oDo-md-1Xg" firstAttribute="top" secondItem="rFW-j7-IkH" secondAttribute="bottom" constant="15" id="guy-sT-ZmH"/>
+                            <constraint firstItem="CgJ-jK-y9L" firstAttribute="centerY" secondItem="5DR-S5-Iw3" secondAttribute="centerY" id="n1t-Lc-lWA"/>
+                            <constraint firstItem="rFW-j7-IkH" firstAttribute="top" secondItem="zul-Qg-lPi" secondAttribute="bottom" constant="24" id="nG1-1w-geW"/>
+                            <constraint firstItem="RxZ-os-i5a" firstAttribute="top" secondItem="5DR-S5-Iw3" secondAttribute="bottom" constant="20" id="yj6-bh-tAt"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="432"/>
+                    <connections>
+                        <outlet property="operatorPickerView" destination="RxZ-os-i5a" id="PZn-aw-Eu6"/>
+                        <outlet property="operatorPickerViewLeading" destination="aqO-mQ-NhF" id="rLG-L0-XGh"/>
+                        <outlet property="switchButton" destination="v9C-UV-aL9" id="biN-e6-FsG"/>
+                        <outlet property="temPickerView" destination="X0k-XO-XWz" id="NW2-dg-eIG"/>
+                        <outlet property="temPickerViewLeading" destination="5od-Q7-oaD" id="Cc0-Sf-5Ob"/>
+                        <outlet property="tmpSwitch" destination="CgJ-jK-y9L" id="IoX-nw-6nj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nz3-gN-MLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="conditioner_auto_icon_close" width="55" height="55"/>
+        <image name="conditioner_auto_icon_sel" width="55" height="55"/>
+        <image name="conditioner_heating_icon_close" width="55.5" height="55"/>
+        <image name="conditioner_heating_icon_sel" width="55.5" height="55.5"/>
+        <image name="conditioner_refrigeration_icon_close" width="55" height="55"/>
+        <image name="conditioner_refrigeration_icon_sel" width="55" height="55"/>
+        <image name="conditioner_xeransis_icon_close" width="55" height="55"/>
+        <image name="conditioner_xeransis_icon_sel" width="55" height="55"/>
+        <image name="device_switch_close" width="26" height="26"/>
+        <image name="device_switch_open" width="24" height="23.5"/>
+    </resources>
+</document>

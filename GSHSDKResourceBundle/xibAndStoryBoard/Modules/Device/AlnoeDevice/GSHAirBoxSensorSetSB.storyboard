@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Air Box Sensor SetVC-->
+        <scene sceneID="Ihp-AQ-dd0">
+            <objects>
+                <viewController storyboardIdentifier="GSHAirBoxSensorSetVC" id="BJq-ay-sJl" customClass="GSHAirBoxSensorSetVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7H5-2E-2kh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zkp-q7-TPn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EvY-42-5tx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mR5-Mo-wrx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIZ-XX-Isa">
+                                        <rect key="frame" x="295" y="0.0" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="y5D-fD-5i3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="确定">
+                                            <color key="titleColor" red="0.1803921568627451" green="0.69019607843137254" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sureButtonClick:" destination="BJq-ay-sJl" eventType="touchUpInside" id="6bT-ui-2iS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空气盒子" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSI-0T-anX">
+                                        <rect key="frame" x="97.5" y="4.5" width="180" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="uQq-lq-wy2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3ve-2g-Wur"/>
+                                    <constraint firstItem="iSI-0T-anX" firstAttribute="centerX" secondItem="mR5-Mo-wrx" secondAttribute="centerX" id="MaA-Hz-2WU"/>
+                                    <constraint firstItem="qIZ-XX-Isa" firstAttribute="top" secondItem="mR5-Mo-wrx" secondAttribute="top" id="O0g-Jp-bPs"/>
+                                    <constraint firstAttribute="trailing" secondItem="qIZ-XX-Isa" secondAttribute="trailing" constant="20" id="UB7-nx-SWV"/>
+                                    <constraint firstAttribute="bottom" secondItem="qIZ-XX-Isa" secondAttribute="bottom" id="mHD-LG-U8l"/>
+                                    <constraint firstItem="iSI-0T-anX" firstAttribute="centerY" secondItem="mR5-Mo-wrx" secondAttribute="centerY" id="wwh-kV-Ih8"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="egx-pw-E3z">
+                                <rect key="frame" x="0.0" y="30" width="375" height="402"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GSHAirBoxSensorCell" rowHeight="100" id="dLJ-X3-zVw" customClass="GSHAirBoxSensorCell">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLJ-X3-zVw" id="AVd-Xz-ga3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHc-cZ-MpN">
+                                                    <rect key="frame" x="84" y="0.0" width="80" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="RGP-Ui-YPT"/>
+                                                    </constraints>
+                                                </pickerView>
+                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IpG-1A-6TH">
+                                                    <rect key="frame" x="207.5" y="0.0" width="80" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="gdw-kT-2a4"/>
+                                                    </constraints>
+                                                </pickerView>
+                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YjH-1V-9cZ">
+                                                    <rect key="frame" x="147.5" y="0.0" width="80" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="Nwh-es-pll"/>
+                                                    </constraints>
+                                                </pickerView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IpG-1A-6TH" firstAttribute="top" secondItem="AVd-Xz-ga3" secondAttribute="top" id="2fs-Fj-Kmw"/>
+                                                <constraint firstAttribute="bottom" secondItem="gHc-cZ-MpN" secondAttribute="bottom" id="6fc-wG-qLI"/>
+                                                <constraint firstItem="YjH-1V-9cZ" firstAttribute="top" secondItem="AVd-Xz-ga3" secondAttribute="top" id="6ve-ZV-czb"/>
+                                                <constraint firstItem="IpG-1A-6TH" firstAttribute="centerX" secondItem="AVd-Xz-ga3" secondAttribute="trailing" multiplier="0.66" id="7Vi-p2-6c5"/>
+                                                <constraint firstAttribute="bottom" secondItem="IpG-1A-6TH" secondAttribute="bottom" id="8yy-fY-8yL"/>
+                                                <constraint firstItem="gHc-cZ-MpN" firstAttribute="centerX" secondItem="AVd-Xz-ga3" secondAttribute="trailing" multiplier="0.33" id="HFJ-gQ-c0w"/>
+                                                <constraint firstItem="gHc-cZ-MpN" firstAttribute="top" secondItem="AVd-Xz-ga3" secondAttribute="top" id="diu-k4-bgC"/>
+                                                <constraint firstAttribute="bottom" secondItem="YjH-1V-9cZ" secondAttribute="bottom" id="qot-bU-1AF"/>
+                                                <constraint firstItem="YjH-1V-9cZ" firstAttribute="centerX" secondItem="AVd-Xz-ga3" secondAttribute="centerX" id="rHa-5R-HFv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="leftPickerView" destination="gHc-cZ-MpN" id="hRk-23-O5Z"/>
+                                            <outlet property="leftPickerViewCenterX" destination="HFJ-gQ-c0w" id="8MT-wu-Hg0"/>
+                                            <outlet property="middlePickerView" destination="YjH-1V-9cZ" id="XDf-vh-oQ2"/>
+                                            <outlet property="rightPickerView" destination="IpG-1A-6TH" id="gXV-I8-RcX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BJq-ay-sJl" id="qbu-DZ-ljk"/>
+                                    <outlet property="delegate" destination="BJq-ay-sJl" id="AJp-LC-ChW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="egx-pw-E3z" firstAttribute="leading" secondItem="EvY-42-5tx" secondAttribute="leading" id="CGO-SF-1ic"/>
+                            <constraint firstAttribute="trailing" secondItem="mR5-Mo-wrx" secondAttribute="trailing" id="D1x-Y8-z19"/>
+                            <constraint firstItem="mR5-Mo-wrx" firstAttribute="leading" secondItem="EvY-42-5tx" secondAttribute="leading" id="SFn-lv-PuY"/>
+                            <constraint firstItem="Zkp-q7-TPn" firstAttribute="top" secondItem="egx-pw-E3z" secondAttribute="bottom" id="U8N-Cs-65y"/>
+                            <constraint firstItem="egx-pw-E3z" firstAttribute="top" secondItem="mR5-Mo-wrx" secondAttribute="bottom" id="dmk-48-NJI"/>
+                            <constraint firstItem="mR5-Mo-wrx" firstAttribute="top" secondItem="7H5-2E-2kh" secondAttribute="bottom" id="jaS-E2-yKc"/>
+                            <constraint firstAttribute="trailing" secondItem="egx-pw-E3z" secondAttribute="trailing" id="zIh-5X-uj1"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="432"/>
+                    <connections>
+                        <outlet property="airBoxTableView" destination="egx-pw-E3z" id="d8Q-mk-pGp"/>
+                        <outlet property="deviceNameLabel" destination="iSI-0T-anX" id="BpS-Kn-bZN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIO-pJ-fwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="95.802098950524751"/>
+        </scene>
+    </scenes>
+</document>

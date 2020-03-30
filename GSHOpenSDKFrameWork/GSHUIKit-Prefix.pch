@@ -1,0 +1,47 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    @import UIKit;
+    @import Foundation;
+#endif
+
+
+// 屏幕宽度，会根据横竖屏的变化而变化
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+// 屏幕宽度，跟横竖屏无关
+#define DEVICE_WIDTH (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
+
+// 屏幕高度，会根据横竖屏的变化而变化
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+// 屏幕高度，跟横竖屏无关
+#define DEVICE_HEIGHT (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height)
+
+#define K_iPhoneXStyle ((SCREEN_WIDTH == 375.f && SCREEN_HEIGHT == 812.f ? YES : NO) || (SCREEN_WIDTH == 414.f && SCREEN_HEIGHT == 896.f ? YES : NO))
+
+#define KNavigationBar_Height (K_iPhoneXStyle ? 88.0f : 64.0f)
+#define KStatusBar_Height (K_iPhoneXStyle ? 44.0 : 20.0)
+#define KTabBarHeight (K_iPhoneXStyle ? 83.0 : 49.0)
+#define KTabBarBottom (K_iPhoneXStyle ? 34.0 : 0.0)
+
+#define DeviceIconPlaceHoldImage [UIImage imageWithColor:[UIColor colorWithHexString:@"#F6F7FA"]]
+#define GlobalPlaceHoldImage [UIImage ZHImageNamed:@"default_icon_image"]
+
+#import "GSHOpenSDKHeader.h"
+
+
+#import "GSHPageManager.h"
+#import "GSHPageManager.h"
+#import "UIViewController+TZM.h"
+#import "TZMProgressHUDManager.h"
+#import <Masonry.h>
+#import "GSHPullDownHeader.h"
